@@ -1,5 +1,5 @@
 - pathPrefix:
-    - /dev-docs-template/
+    - /acrobat-pdfl-sdk/
 
 - pages:
     - [Analytics](index.md)
