@@ -1,3 +1,8 @@
+---
+title: Accessibility-Reading PDF Files Through the DOM Interface
+description: PDFL and Acrobat APIs for progrmattically working with PDF 
+---
+
 # Reading PDF Files Through the DOM Interface
 
 Acrobat 6.0 and later defines a document object model (DOM) that provides more complete access to the document structure than the MSAA interface. The Accessibility plug-in defines and exports five COM interfaces in `AcrobatAccess.lib` that expose Acrobat’s document hierarchy:

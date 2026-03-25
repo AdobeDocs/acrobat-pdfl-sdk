@@ -1,6 +1,6 @@
 ---
-title: xxx
-description: lkjlkj lkjlkj  
+title:  Acrobat-PDFL SDK: Accessibility
+description: PDFL and Acrobat APIs for progrmattically working with PDF 
 ---
 
 
