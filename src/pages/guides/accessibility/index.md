@@ -1,3 +1,9 @@
+---
+title: xxx
+description: lkjlkj lkjlkj  
+---
+
+
 # Acrobat-PDFL SDK: Accessibility
 
 Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers:
@@ -58,7 +64,7 @@ In these cases, the user must contact the document author to provide a version t
 
 The following occurs when a document has security settings that make it inaccessible:
 
-- Acrobat exports an MSAA `IAccessible` object warning of a possible error. This object has the role `ROLE_SYSTEM_TEXT` and the name “`Alert: Protection Failure` “. For more information, see [PDF Protected Document](MSAA-PDF.md#72837).
+- Acrobat exports an MSAA `IAccessible` object warning of a possible error. This object has the role `ROLE_SYSTEM_TEXT` and the name “`Alert: Protection Failure` “. For more information, see [PDF Protected Document](msaa-pdf.md#72837).
 - When using the DOM interface in Acrobat 7, `GetDocInfo` returns the status `DocState_Protected`.
 
 You can become an Adobe Trusted Partner and create Trusted Assistive Technology. Trusted Partners are developers of assistive products that respect the copy protection of encrypted PDF files, and can gain access to 40-bit encrypted files. For more information on becoming a Trusted Partner, see [http://www.adobe.com/go/acrobat\_developer](http://www.adobe.com/go/acrobat_developer) .
@@ -70,7 +76,7 @@ A document can be inaccessible because it is empty, or it can appear empty becau
 
 The following occurs when a document appears to be empty:
 
-- Acrobat exports an MSAA `IAccessible` object warning of a possible error. This object has the role `ROLE_SYSTEM_TEXT` and the name “`Alert: Empty document` “. If Acrobat is delivering information a page at a time, a genuinely empty page also generates this warning. For more information, see [Empty PDF Document](MSAA-PDF.md#10863).
+- Acrobat exports an MSAA `IAccessible` object warning of a possible error. This object has the role `ROLE_SYSTEM_TEXT` and the name “`Alert: Empty document` “. If Acrobat is delivering information a page at a time, a genuinely empty page also generates this warning. For more information, see [Empty PDF Document](msaa-pdf.md#10863).
 - When using the DOM in Acrobat 7, `GetDocInfo` returns the status `DocState_Empty`.
 
 <a id="45172"></a>
@@ -104,7 +110,7 @@ For Acrobat 7.0 and later, the following occurs:
 
 You can retrieve an `IAccessible` object from event notifications by using the MSAA function `AccessibleObjectFromEvent`.  This object represents the document or an element within the document.
 
-Some events always return an object of a particular type. For others, you must determine the type of the object from the role and specific `childID`.  The meaning of the event can be different for different types of objects. For more information, see [Identifying IAccessible objects in a document](MSAA-PDF.md#99842).
+Some events always return an object of a particular type. For others, you must determine the type of the object from the role and specific `childID`.  The meaning of the event can be different for different types of objects. For more information, see [Identifying IAccessible objects in a document](msaa-pdf.md#99842).
 
 Acrobat posts the following `WinEvent` notifications:
 
@@ -120,5 +126,5 @@ Acrobat posts the following `WinEvent` notifications:
 
 To retrieve a DOM object, you can do one of the following actions:
 
-- Call the MSAA library function `AccessibleObjectFromEvent` to get an `IAccessible` object (as described above). Then call that `IAccessible` object’s `get_PDDomNode` method to get the corresponding DOM object. For more information, see [IGetPDDomNode interface](MSAA-PDF.md#10950).
+- Call the MSAA library function `AccessibleObjectFromEvent` to get an `IAccessible` object (as described above). Then call that `IAccessible` object’s `get_PDDomNode` method to get the corresponding DOM object. For more information, see [IGetPDDomNode interface](msaa-pdf.md#10950).
 - Call the MSAA library function `AccessibleObjectFromWindow` on the window containing the document and pass `OBJID_NATIVEOM` as the second parameter. This returns the DOM object for the root of the document.
