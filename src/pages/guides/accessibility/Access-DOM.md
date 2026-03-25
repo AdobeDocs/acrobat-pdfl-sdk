@@ -142,7 +142,7 @@ LRESULT GetType (long *nodeType)
 
 `ppDispChild` returns the `IPDDomNode` for the child of this element at position `index` , or `NULL` if there is no child at position `index`.
 
-For a text node, this returns child words; see [Words and lines in text](Access_DOM.md#33811).
+For a text node, this returns child words; see [Words and lines in text](Access-DOM.md#33811).
 
 ```
 LRESULT GetChild (ASInt32 index,  IDispatch **ppDispChild)
@@ -257,7 +257,7 @@ LRESULT ScrollTo()
 <a id="54271"></a>
 ### GetTextInLines
 
-`ppDispTextLines` returns an `IPDDomNode` whose children (obtained by calling `GetChild` ) have the role `CPDDomNode_LineSeg` ; see [Words and lines in text](Access_DOM.md#33811).
+`ppDispTextLines` returns an `IPDDomNode` whose children (obtained by calling `GetChild` ) have the role `CPDDomNode_LineSeg` ; see [Words and lines in text](Access-DOM.md#33811).
 
 `visibleOnly` controls whether the children include only lines that contain at least some visible text.
 

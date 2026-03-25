@@ -20,7 +20,7 @@ Each type of `IAccessible` object has a different implementation of the standard
 
 > **Note**
 >
-> These elements are explicit in the DOM interface; see [Reading PDF Files Through the DOM Interface](Access_DOM.md#30124).
+> These elements are explicit in the DOM interface; see [Reading PDF Files Through the DOM Interface](Access-DOM.md#30124).
 
 For each document, Acrobat builds a tree of `IAccessible` objects representing the document and its internal structure. Because there is just one window handle associated with the document, Acrobat posts all event notifications to that window. In each notification, a `childID` identifies an `IAccessible` object for an element in the document. For example, when the user tabs to the next link, the `EVENT_OBJECT_FOCUS` notification includes a `childID` that is the UID of the link object. See [Handling event notifications](index.md#21082).
 
@@ -29,13 +29,13 @@ The following interfaces are exported from the `IAccessible` object by Acrobat:
 <a id="10950"></a>
 ## IGetPDDomNode interface
 
-This interface exports one function, `get_PDDomNode` , which returns a DOM object. The methods described in [Reading PDF Files Through the DOM Interface](Access_DOM.md#30124)” can then be used on this object.
+This interface exports one function, `get_PDDomNode` , which returns a DOM object. The methods described in [Reading PDF Files Through the DOM Interface](Access-DOM.md#30124)” can then be used on this object.
 
 ### get\_PDDomNode
 
-Returns a DOM object. For more information, see [Reading PDF Files Through the DOM Interface](Access_DOM.md#30124).
+Returns a DOM object. For more information, see [Reading PDF Files Through the DOM Interface](Access-DOM.md#30124).
 
-`varID` is the same as for the other MSAA methods (see [Descriptive properties and methods](MSAA&PDF.md#89440))
+`varID` is the same as for the other MSAA methods (see [Descriptive properties and methods](MSAA-PDF.md#89440))
 
 ```
 HRESULT get_PDDomNode(
@@ -115,10 +115,10 @@ IServiceProvider *sp = NULL;
 
 This section provides a brief syntax summary of the `IAccessible` interface methods as defined by MSAA. All methods return `HRESULT`.  The methods and properties are organized into the following groups:
 
-- [Navigation and hierarchy](MSAA&PDF.md#73526)
-- [Descriptive properties and methods](MSAA&PDF.md#89440)
-- [Selection and focus](MSAA&PDF.md#22290)
-- [Spatial mapping](MSAA&PDF.md#57514)
+- [Navigation and hierarchy](MSAA-PDF.md#73526)
+- [Descriptive properties and methods](MSAA-PDF.md#89440)
+- [Selection and focus](MSAA-PDF.md#22290)
+- [Spatial mapping](MSAA-PDF.md#57514)
 
 <a id="73526"></a>
 ## Navigation and hierarchy
@@ -405,22 +405,22 @@ This section describes the MSAA `IAccessible` object types that are defined to r
 
 The objects are:
 
-- [PDF Document](MSAA&PDF.md#39396)
-- [PDF Page](MSAA&PDF.md#89992)
-- [PDF Protected Document](MSAA&PDF.md#72837)
-- [Empty PDF Document](MSAA&PDF.md#10863)
-- [PDF Structure Element](MSAA&PDF.md#77828)
-- [PDF Content Element](MSAA&PDF.md#23328)
-- [PDF Comment](MSAA&PDF.md#22500)
-- [PDF Link](MSAA&PDF.md#55866)
-- [PDF Text Form Field](MSAA&PDF.md#40546)
-- [PDF Button Form Field](MSAA&PDF.md#91493)
-- [PDF CheckBox Form Field](MSAA&PDF.md#13511)
-- [PDF RadioButton Form Field](MSAA&PDF.md#19394)
-- [PDF ComboBox Form Field](MSAA&PDF.md#25792)
-- [PDF List Box Form Field](MSAA&PDF.md#20747)
-- [PDF Digital Signature Form Field](MSAA&PDF.md#91488)
-- [PDF Caret](MSAA&PDF.md#49405)
+- [PDF Document](MSAA-PDF.md#39396)
+- [PDF Page](MSAA-PDF.md#89992)
+- [PDF Protected Document](MSAA-PDF.md#72837)
+- [Empty PDF Document](MSAA-PDF.md#10863)
+- [PDF Structure Element](MSAA-PDF.md#77828)
+- [PDF Content Element](MSAA-PDF.md#23328)
+- [PDF Comment](MSAA-PDF.md#22500)
+- [PDF Link](MSAA-PDF.md#55866)
+- [PDF Text Form Field](MSAA-PDF.md#40546)
+- [PDF Button Form Field](MSAA-PDF.md#91493)
+- [PDF CheckBox Form Field](MSAA-PDF.md#13511)
+- [PDF RadioButton Form Field](MSAA-PDF.md#19394)
+- [PDF ComboBox Form Field](MSAA-PDF.md#25792)
+- [PDF List Box Form Field](MSAA-PDF.md#20747)
+- [PDF Digital Signature Form Field](MSAA-PDF.md#91488)
+- [PDF Caret](MSAA-PDF.md#49405)
 
 The following are some general notes:
 
