@@ -22,7 +22,7 @@ on:
       deployAll:
         description: "Force deploy all files"
         type: boolean
-        default: false
+        default: true
 jobs:
   deployment:
     name: Deployment
