@@ -1,8 +1,10 @@
-<RedoclyAPIBlock src="/dev-docs-template/petstore.json" />
-
+---
+title: Acrobat SDK Home
+description: Home page for the Acrobat SDK.
+contributors: Ben Rogers (Adobe Content Engineering)
+---
 
 acrobat page
-
 
 Downloads
 

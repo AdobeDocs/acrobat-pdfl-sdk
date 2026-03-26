@@ -2,13 +2,13 @@
     - /acrobat-pdfl-sdk/
 
 - pages:
-    - [Acrobat and PDFL SDKs](https://developer.adobe.com/acrobat-pdfl-sdk/)
+    - [Acrobat and PDFL SDKs](index.md)
     - Acrobat SDK
-        - [TBD](index.md)
+        - [Release Notes](acrobat/releasenotes.md)
         - [TBD](index.md)
         - [TBD](index.md)
     - PDFL SDK
-        - [TBD](index.md)
+        - [Release Notes](pdfl/releasenotes.md)
         - [TBD](index.md)
         - [TBD](index.md)
     - Shared Library

@@ -1,10 +1,12 @@
+
+
+
 # Acrobat-PDFL SDK: Accessibility
 
-Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers:
+Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers. On the Microsoft  Windows  operating system, Acrobat and Adobe Reader export PDF content as COM objects. Accessibility applications such as screen readers can interface with Acrobat or Adobe Reader in two ways:
 
-- On the Microsoft  Windows  operating system, Acrobat and Adobe Reader export PDF content as COM objects. Accessibility applications such as screen readers can interface with Acrobat or Adobe Reader in two ways:
-  - Through the Microsoft Active Accessibility (MSAA) interface, using MSAA objects that Acrobat or Adobe Reader exports
-  - Directly through exported COM objects that allow access to the PDF document’s internal structure, called the *document object model* (DOM).
+- Through the Microsoft Active Accessibility (MSAA) interface, using MSAA objects that Acrobat or Adobe Reader exports
+- Directly through exported COM objects that allow access to the PDF document’s internal structure, called the *document object model* (DOM).
 
 The DOM and MSAA models are related, and developers can use either or both. Acrobat issues notifications to accessibility clients about interesting events occurring in the PDF file window and responds to requests from such clients.
 
