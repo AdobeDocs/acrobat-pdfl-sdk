@@ -1,9 +1,3 @@
----
-title:  Acrobat-PDFL SDK: Accessibility
-description: PDFL and Acrobat APIs for progrmattically working with PDF 
----
-
-
 # Acrobat-PDFL SDK: Accessibility
 
 Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers:
@@ -22,7 +16,7 @@ The DOM and MSAA models are related, and developers can use either or both. Acro
 
 When rendering documents on the screen, Acrobat provides visual fidelity in a device-independent manner. However, the order in which Acrobat renders characters is not necessarily the same as the order in which they are to be read. Acrobat does not use standard system services that are used by assistive technology to capture content displayed on the screen.
 
-*Tagged PDF* , introduced in PDF 1.4, defines a *logical structure* for the document that corresponds to the logical order of the content, regardless of the order in which the content is rendered. Acrobat uses the logical structure of a Tagged PDF document to determine word order. Through the accessibility interfaces, Acrobat can deliver the text of the PDF file as Unicode and can also make active elements such as links and form fields accessible.
+*Tagged PDF*, introduced in PDF 1.4, defines a *logical structure* for the document that corresponds to the logical order of the content, regardless of the order in which the content is rendered. Acrobat uses the logical structure of a Tagged PDF document to determine word order. Through the accessibility interfaces, Acrobat can deliver the text of the PDF file as Unicode and can also make active elements such as links and form fields accessible.
 
 > **Note**
 >
@@ -51,7 +45,6 @@ The interfaces treat inaccessible documents as follows:
 - In Acrobat 6.0, inaccessible documents do not export any PDF DOM objects; attempts to retrieve PDF DOM objects from it fail without indicating the reason.
 - In Acrobat 7.0 and later, the DOM interface returns objects that represent the document, and DOM methods can be used to find out why the document is inaccessible.
 
-<a id="57086"></a>
 ### Processing protected documents
 
 A document may have security settings that make it inaccessible. This can occur under the following conditions:
@@ -67,9 +60,8 @@ The following occurs when a document has security settings that make it inaccess
 - Acrobat exports an MSAA `IAccessible` object warning of a possible error. This object has the role `ROLE_SYSTEM_TEXT` and the name “`Alert: Protection Failure` “. For more information, see [PDF Protected Document](msaa-pdf.md#72837).
 - When using the DOM interface in Acrobat 7, `GetDocInfo` returns the status `DocState_Protected`.
 
-You can become an Adobe Trusted Partner and create Trusted Assistive Technology. Trusted Partners are developers of assistive products that respect the copy protection of encrypted PDF files, and can gain access to 40-bit encrypted files. For more information on becoming a Trusted Partner, see [http://www.adobe.com/go/acrobat\_developer](http://www.adobe.com/go/acrobat_developer) .
+You can become an Adobe Trusted Partner and create Trusted Assistive Technology. Trusted Partners are developers of assistive products that respect the copy protection of encrypted PDF files, and can gain access to 40-bit encrypted files. For more information on becoming a Trusted Partner, see [http://www.adobe.com/go/acrobat\_developer](http://www.adobe.com/go/acrobat_developer).
 
-<a id="97997"></a>
 ### Processing empty documents
 
 A document can be inaccessible because it is empty, or it can appear empty because of the way the PDF was created. For instance, scanned images that have not been run through an optical character recognition (OCR) tool appear to be empty. Malformed structure trees can also make a document appear empty.
@@ -79,7 +71,6 @@ The following occurs when a document appears to be empty:
 - Acrobat exports an MSAA `IAccessible` object warning of a possible error. This object has the role `ROLE_SYSTEM_TEXT` and the name “`Alert: Empty document` “. If Acrobat is delivering information a page at a time, a genuinely empty page also generates this warning. For more information, see [Empty PDF Document](msaa-pdf.md#10863).
 - When using the DOM in Acrobat 7, `GetDocInfo` returns the status `DocState_Empty`.
 
-<a id="45172"></a>
 ### Processing unavailable documents
 
 When a document is unavailable, Acrobat returns similar objects from MSAA and DOM. A document may be unavailable for one of several reasons:
@@ -90,7 +81,6 @@ When a document is unavailable, Acrobat returns similar objects from MSAA and DO
 
 In all these cases, when using the DOM, the status returned in `GetDocInfo` is `DocState_Unavailable`.
 
-<a id="21082"></a>
 ## Handling event notifications
 
 Each open document in Acrobat is associated with its own window handle. All `WinNotifyEvent` notifications for any part of the document use that window handle. For the PDF window:
@@ -101,7 +91,7 @@ Each open document in Acrobat is associated with its own window handle. All `Win
 For Acrobat 7.0 and later, the following occurs:
 
 - If the selection is set or changed, `VALUECHANGE` is notified, with the `childID` of the `IAccessible` object containing the beginning of the selection.
-- If the selection is set, `SELECTION` is notified on the document (with a `childID` of `0` ).
+- If the selection is set, `SELECTION` is notified on the document (with a `childID` of `0`).
 - If the selection is cleared, `SELECTIONREMOVE` is notified on the document.
 - If the selection is extended, `SELECTIONADD` is notified, except when it is extended via keyboard commands (in that case `SELECTIONREMOVE` followed by `SELECTION` is notified).
 - A `LOCATIONCHANGE` notification is issued when the caret moves. `SHOW` and `HIDE` notifications are issued when the caret is activated and deactivated.
@@ -115,12 +105,11 @@ Some events always return an object of a particular type. For others, you must d
 Acrobat posts the following `WinEvent` notifications:
 
 | Notification | Description |
-| --- | --- |
 | `EVENT_OBJECT_FOCUS` | The document window, a link, a comment, or a form field has received keyboard focus. |
 | `AccessibleObjectFromEvent` | Returns the appropriate `IAccessible` object, either for the document or page itself or for the link, comment, or form field. The `childID` parameter identifies the object. |
-| `EVENT_OBJECT_LOCATIONCHANGE` | The caret (text cursor) has moved. If the caret is in a text edit field containing keyboard focus, the value of the text field may also have changed.<br><br>The `idObjectType` parameter for this event is `objid_caret`.  `AccessibleObjectFromEvent` returns an `IAccessible` object for the caret. |
-| `EVENT_OBJECT_STATECHANGE` | If the `childID` parameter is `CHILDID_SELF` , the current document or page has changed its state by opening or closing a comment. The client should update its copy of the document content. Only the `IAccessible` object for the comment changes when this occurs.<br><br>If `childID` is non-zero, it is the UID of the `IAccessible` object for a form field, such as a checkbox or radio button, whose state has changed. |
-| `EVENT_OBJECT_VALUECHANGE` | If the `childID` parameter is `CHILDID_SELF` , a new document or page has been opened or the current content has changed. The client should update its cached value of the document or page.<br><br>If the `childID` parameter is not `CHILDID_SELF` , it identifies the content on the page to which the user has turned his or her attention. For instance, if a page has scrolled or Acrobat has followed a link to a new page, it identifies the first visible content on the page. The client may wish to update its internal state about where it is reading the document. |
+| `EVENT_OBJECT_LOCATIONCHANGE` | The caret (text cursor) has moved. If the caret is in a text edit field containing keyboard focus, the value of the text field may also have changed.  The `idObjectType` parameter for this event is `objid_caret`.  `AccessibleObjectFromEvent` returns an `IAccessible` object for the caret. |
+| `EVENT_OBJECT_STATECHANGE` | If the `childID` parameter is `CHILDID_SELF`, the current document or page has changed its state by opening or closing a comment. The client should update its copy of the document content. Only the `IAccessible` object for the comment changes when this occurs.  If `childID` is non-zero, it is the UID of the `IAccessible` object for a form field, such as a checkbox or radio button, whose state has changed. |
+| `EVENT_OBJECT_VALUECHANGE` | If the `childID` parameter is `CHILDID_SELF`, a new document or page has been opened or the current content has changed. The client should update its cached value of the document or page.  If the `childID` parameter is not `CHILDID_SELF`, it identifies the content on the page to which the user has turned his or her attention. For instance, if a page has scrolled or Acrobat has followed a link to a new page, it identifies the first visible content on the page. The client may wish to update its internal state about where it is reading the document. |
 
 ### Retrieving a PDF DOM object for an event
 
