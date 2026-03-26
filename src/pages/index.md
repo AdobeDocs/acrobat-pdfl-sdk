@@ -1,12 +1,12 @@
 ---
-title: Overview - Analytics
-description: This is the overview page of Analytics
+title: Acrobat and PDFL SDK Home
+description: Home page for the Acrobat and PDFL SDKs and their shared documentation.
 contributors: Ben Rogers (Adobe Content Engineering)
 ---
 
 <HeroSimple slots="heading, text"/>
 
-# Analytics API
+# testing
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. 
 
