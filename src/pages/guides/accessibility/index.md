@@ -10,7 +10,7 @@ Adobe provides methods to make the content of a PDF file available to assistive 
 
 The DOM and MSAA models are related, and developers can use either or both. Acrobat issues notifications to accessibility clients about interesting events occurring in the PDF file window and responds to requests from such clients.
 
-> **Warning**
+> **Note**
 >
 > This document assumes that you are familiar with the ATK architecture.
 

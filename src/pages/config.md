@@ -13,13 +13,16 @@
         - [TBD](index.md)
     - Shared Library
       - [Accessibility](guides/accessibility/index.md)
+      - [Accessibility](guides/accessibility/index.md)
+      - [Accessibility](guides/accessibility/index.md)
+    - [Community](https://community.adobe.com/t5/acrobat-sdk/bd-p/acrobat-sdk?page=1&sort=latest_replies&filter=all)
 
 - subPages:
-    - [AAAA](guides/index.md) 
-        - [BBB](guides/dummy_oauth_client/index.md) 
-        - [CCC](guides/dummy_using_postman/index.md) 
+    - [Accessibility](guides/accessibility/index.md) 
+        - [Overview](guides/accessibility/index.md) 
+        - [Reading PDF Files Through MSAA](guides/accessibility/msaa-pdf.md) 
+        - [Reading PDF Files Through the DOM Interface](guides/accessibility/access-dom.md) 
     - [11111](support/index.md) 
         - [DDD](support/index.md) 
         - [EEE](support/FAQ/index.md) 
         - [FFF](support/contribute/index.md) 
-    - [Adobe's Acrobat SDK forum](https://community.adobe.com/t5/acrobat-sdk/bd-p/acrobat-sdk?page=1&sort=latest_replies&filter=all)
