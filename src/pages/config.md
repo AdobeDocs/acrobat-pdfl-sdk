@@ -4,14 +4,15 @@
 - pages:
     - [Acrobat and PDFL SDKs](https://developer.adobe.com/acrobat-pdfl-sdk/)
     - Acrobat SDK
-        - [Free Dev Account Sign-Up](https://www.adobe.com/sign/developer-form.html)
-        - [FAQs and Tech Tips](https://www.adobe.com/go/acrobatsigntechblog)
-        - [Application Certification Form](https://www.adobe.com/go/esign-dev-cert)
+        - [TBD](index.md)
+        - [TBD](index.md)
+        - [TBD](index.md)
     - PDFL SDK
-        - [Webhook Reference](overview/acrobat_sign_events/index.md)
-        - [Acrobat Sign Embed](overview/embedpartner/index.md)
-        - [SDK Downloads](overview/sdks/index.md)
+        - [TBD](index.md)
+        - [TBD](index.md)
+        - [TBD](index.md)
     - Shared Library
+      - [Accessibility](guides/accessibility/index.md)
 
 - subPages:
     - [AAAA](guides/index.md) 

@@ -4,57 +4,40 @@ description: Home page for the Acrobat and PDFL SDKs and their shared documentat
 contributors: Ben Rogers (Adobe Content Engineering)
 ---
 
-<HeroSimple slots="heading, text"/>
-
-# testing
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. 
-
 <Resources slots="heading, links"/>
 
 #### Resources
 
-* [Acrobat SDK Docs](https://developer.adobe.com)
-* [PDFL SDK Docs](https://developer.adobe.com)
+* [Acrobat SDK Docs](acrobat/index.md)
+* [PDFL SDK Docs](pdfl/index.md)
 * [GitHub Repo](https://github.com/AdobeDocs/acrobat-pdfl-sdk)
 * [Acrobat Sign Developer](https://developer.adobe.com/acrobat-sign/#)
 
-
 ## Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. Nam blandit vitae ante et auctor. Donec placerat egestas posuere. Aliquam erat volutpat. In condimentum massa eu pharetra porta. Nunc tempus massa sit amet nisl posuere sagittis. Mauris sit amet rhoncus neque. Phasellus ut vulputate est, vel auctor metus.
+Acrobat products provide several ways developers can interact with Acrobat products. From the tried and true Acrobat and PDFL SDKs that have served enterprise for decades, to the new Document Services APIs that provide web-based opportunities for PDF manipulation, all SDKs provide docs, code samples, and downloads that offer maximum flexibility and speed to get you up and running.
 
-Donec tincidunt turpis in congue vulputate. Suspendisse potenti. Phasellus feugiat eros sem, tristique sollicitudin lacus consectetur id. Cras tortor orci, venenatis ac vulputate sit amet, auctor sed ex. Ut vel convallis felis. Etiam luctus, diam sed venenatis tincidunt, ipsum turpis volutpat eros, nec interdum arcu mi molestie dolor. Donec id mauris sed odio mollis viverra sed lobortis quam. Aliquam mi metus, ultricies sagittis hendrerit eget, volutpat vel dui. Proin id urna hendrerit, scelerisque arcu sit amet, egestas neque. Sed fringilla odio tincidunt sapien malesuada facilisis.
+* [Acrobat SDK](acrobat/index.md): The Acrobat SDK is a set of tools that help you develop software that interacts with Acrobat technology. The SDK contains header files, type libraries, simple utilities, sample code, and documentation.
+* [PDF Library SDK](pdfl/index.md): The PDFL SDK contains a powerful set of functions for developing third-party solutions and workflows built upon the Adobe PDF standard. The Adobe PDF Library is based on Acrobat offers complete functionality for generating, manipulating, rendering, and printing Adobe PDF documents.
+* [Document Services SDK](https://developer.adobe.com/document-services/homepage/): Build engaging digital document experiences with Adobe’s cloud-based APIs, including the PDF Services API and PDF Embed API.
+* [Adobe Sign SDKs](https://developer.adobe.com/acrobat-sign/): The Adobe Sign developer tools include several SDKs (JS, JAVA, C++, etc.) and a mature REST API, developer guide and other resources. These tools enable building signing workflows and apps on the Adobe Sign platform.
 
-## Discover
+## Developer Guides
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+Most of the developer documentation is shared across Acrobat and PDFL. For domain-specific variations, refer to the API references. Available docs include: 
 
-### Get Started
+- TBD
+- TBD
+- TBD
 
-[Quickstart Guide](guides/index.md)
+## Support and contacts
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. Nam blandit vitae ante et auctor. Donec placerat egestas posuere. Aliquam erat volutpat. In condimentum massa eu pharetra porta. Nunc tempus massa sit amet nisl posuere sagittis. Mauris sit amet rhoncus neque. Phasellus ut vulputate est, vel auctor metus.
+Developers can purchase support via the Adobe Creative Cloud Exchange Developer Support program. Supported SDK development activities include those for which the product is designed, tested, and licensed. Acrobat Developer Support does not support use cases that do not involve the Acrobat core API.
 
-Donec tincidunt turpis in congue vulputate. Suspendisse potenti. Phasellus feugiat eros sem, tristique sollicitudin lacus consectetur id. Cras tortor orci, venenatis ac vulputate sit amet, auctor sed ex. Ut vel convallis felis. Etiam luctus, diam sed venenatis tincidunt, ipsum turpis volutpat eros, nec interdum arcu mi molestie dolor. Donec id mauris sed odio mollis viverra sed lobortis quam. Aliquam mi metus, ultricies sagittis hendrerit eget, volutpat vel dui. Proin id urna hendrerit, scelerisque arcu sit amet, egestas neque. Sed fringilla odio tincidunt sapien malesuada facilisis.
+Only the last two major SDK versions with interim updates are eligible for support.
 
+**Note**: For non-programmatic issues, such as questions about installing, using, customizing, or deploying Acrobat, contact [Acrobat Technical Support](https://helpx.adobe.com/uk/contact/what-contact-options.html).
 
-<DiscoverBlock slots="heading, link, text"/>
+## Forum
 
-### Guides
-
-[Calculated Metrics API](guides/dummy_metrics_api/index.md)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. Nam blandit vitae ante et auctor. Donec placerat egestas posuere. Aliquam erat volutpat. In condimentum massa eu pharetra porta. Nunc tempus massa sit amet nisl posuere sagittis. Mauris sit amet rhoncus neque. Phasellus ut vulputate est, vel auctor metus.
-
-Donec tincidunt turpis in congue vulputate. Suspendisse potenti. Phasellus feugiat eros sem, tristique sollicitudin lacus consectetur id. Cras tortor orci, venenatis ac vulputate sit amet, auctor sed ex. Ut vel convallis felis. Etiam luctus, diam sed venenatis tincidunt, ipsum turpis volutpat eros, nec interdum arcu mi molestie dolor. Donec id mauris sed odio mollis viverra sed lobortis quam. Aliquam mi metus, ultricies sagittis hendrerit eget, volutpat vel dui. Proin id urna hendrerit, scelerisque arcu sit amet, egestas neque. Sed fringilla odio tincidunt sapien malesuada facilisis.
-
-
-
-### API References
-
-[Try the API](api/index.md)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare purus, vel dapibus augue suscipit in. Nam blandit vitae ante et auctor. Donec placerat egestas posuere. Aliquam erat volutpat. In condimentum massa eu pharetra porta. Nunc tempus massa sit amet nisl posuere sagittis. Mauris sit amet rhoncus neque. Phasellus ut vulputate est, vel auctor metus.
-
-Donec tincidunt turpis in congue vulputate. Suspendisse potenti. Phasellus feugiat eros sem, tristique sollicitudin lacus consectetur id. Cras tortor orci, venenatis ac vulputate sit amet, auctor sed ex. Ut vel convallis felis. Etiam luctus, diam sed venenatis tincidunt, ipsum turpis volutpat eros, nec interdum arcu mi molestie dolor. Donec id mauris sed odio mollis viverra sed lobortis quam. Aliquam mi metus, ultricies sagittis hendrerit eget, volutpat vel dui. Proin id urna hendrerit, scelerisque arcu sit amet, egestas neque. Sed fringilla odio tincidunt sapien malesuada facilisis.
+To participate in the developer community, see [Adobe’s Acrobat SDK forum](https://community.adobe.com/t5/acrobat-sdk/bd-p/acrobat-sdk?page=1&sort=latest_replies&filter=all).
