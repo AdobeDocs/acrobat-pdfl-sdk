@@ -16,7 +16,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend ornare pu
 
 * [Acrobat SDK Docs](https://developer.adobe.com)
 * [PDFL SDK Docs](https://developer.adobe.com)
-* [Github Repo](https://github.com/AdobeDocs/acrobat-pdfl-sdk)
+* [GitHub Repo](https://github.com/AdobeDocs/acrobat-pdfl-sdk)
+* [Acrobat Sign Developer](https://developer.adobe.com/acrobat-sign/#)
+
 
 ## Overview
 

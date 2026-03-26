@@ -2,8 +2,13 @@
     - /acrobat-pdfl-sdk/
 
 - pages:
-    - [Acrobat and PDFL SDKs](index.md)
-    - [Guides](guides/index.md)
+    - [Acrobat and PDFL SDKs](https://developer.adobe.com/acrobat-pdfl-sdk/)
+    - [Acrobat SDK](index.md)
+        - [Free Dev Account Sign-Up](https://www.adobe.com/sign/developer-form.html)
+        - [FAQs and Tech Tips](https://www.adobe.com/go/acrobatsigntechblog)
+        - [Application Certification Form](https://www.adobe.com/go/esign-dev-cert)
+    - [PDFL SDK](pdfl/index.md)
+    - [Shared Library](guides/index.md)
 
 - subPages:
     - [AAAA](guides/index.md) 
@@ -13,4 +18,4 @@
         - [DDD](support/index.md) 
         - [EEE](support/FAQ/index.md) 
         - [FFF](support/contribute/index.md) 
-    - [Community](support/community/index.md)
+    - [Adobe's Acrobat SDK forum](https://community.adobe.com/t5/acrobat-sdk/bd-p/acrobat-sdk?page=1&sort=latest_replies&filter=all)
