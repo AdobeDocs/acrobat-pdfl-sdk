@@ -1,7 +1,12 @@
+---
+title: Accessibility Overview
+description: Acrobat and PDFL SDKs and Acessibility: Overview
+contributors: Ben Rogers (Adobe Content Engineering)
+---
 
+# Acrobat-PDFL SDKs and Accessibility
 
-
-# Acrobat-PDFL SDK: Accessibility
+## Overview
 
 Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers. On the Microsoft  Windows  operating system, Acrobat and Adobe Reader export PDF content as COM objects. Accessibility applications such as screen readers can interface with Acrobat or Adobe Reader in two ways:
 
@@ -16,7 +21,7 @@ The DOM and MSAA models are related, and developers can use either or both. Acro
 
 ## Determining rendering order and logical order
 
-When rendering documents on the screen, Acrobat provides visual fidelity in a device-independent manner. However, the order in which Acrobat renders characters is not necessarily the same as the order in which they are to be read. Acrobat does not use standard system services that are used by assistive technology to capture content displayed on the screen.
+When rendering documents on the screen, Acrobat provides visual fidelity in a device-independent manner. However, the order in which Acrobat renders characters is not necessarily the same as the order in which they are to be read. Acrobat does not use the standard system services assistive technology uses to capture on-screen content.
 
 *Tagged PDF*, introduced in PDF 1.4, defines a *logical structure* for the document that corresponds to the logical order of the content, regardless of the order in which the content is rendered. Acrobat uses the logical structure of a Tagged PDF document to determine word order. Through the accessibility interfaces, Acrobat can deliver the text of the PDF file as Unicode and can also make active elements such as links and form fields accessible.
 
@@ -35,11 +40,11 @@ The user controls the delivery method using the reading preferences.
 
 ## Processing inaccessible documents
 
-A document can be *inaccessible* for one of the following reasons:
+A document can be *inaccessible* if it is:
 
-- It is protected by security settings
-- It is, or appears, empty
-- It is temporarily unavailable
+- Protected by security settings
+- Empty or appears empty
+- Temporarily unavailable
 
 The interfaces treat inaccessible documents as follows:
 
@@ -118,4 +123,4 @@ Acrobat posts the following `WinEvent` notifications:
 To retrieve a DOM object, you can do one of the following actions:
 
 - Call the MSAA library function `AccessibleObjectFromEvent` to get an `IAccessible` object (as described above). Then call that `IAccessible` object’s `get_PDDomNode` method to get the corresponding DOM object. For more information, see [IGetPDDomNode interface](msaa-pdf.md#10950).
-- Call the MSAA library function `AccessibleObjectFromWindow` on the window containing the document and pass `OBJID_NATIVEOM` as the second parameter. This returns the DOM object for the root of the document.
+- Call the MSAA library function `AccessibleObjectFromWindow` on the window containing the document and pass `OBJID_NATIVEOM` as the second parameter to return the DOM object for the document root.

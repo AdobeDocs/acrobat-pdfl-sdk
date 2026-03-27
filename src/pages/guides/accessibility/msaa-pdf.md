@@ -1,4 +1,12 @@
+---
+title: Reading PDF Files Through MSAA
+description: Acrobat and PDFL SDKs and Acessibility: Reading PDF Files Through MSAA
+contributors: Ben Rogers (Adobe Content Engineering)
+---
+
 # Reading PDF Files Through MSAA
+
+## Microsoft Active Accessibility Overview
 
 Microsoft Active Accessibility defines the `IAccessible` interface to applications. This interface consists of a set of methods and properties that are defined in the MSAA documentation.
 

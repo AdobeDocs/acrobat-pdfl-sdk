@@ -27,7 +27,7 @@ Acrobat products provide several ways developers can interact with Acrobat produ
 Most of the developer documentation is shared across Acrobat and PDFL. For domain-specific variations, refer to the API references. Available docs include: 
 
 - TBD
-- TBD
+- Acrobat does not use the standard system services assistive technology uses to capture on-screen content.
 - TBD
 
 ## Support and contacts
