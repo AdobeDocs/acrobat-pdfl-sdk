@@ -112,7 +112,7 @@ Some events always return an object of a particular type. For others, you must d
 Acrobat posts the following `WinEvent` notifications:
 
 | Notification | Description |
-| ------------ | ----------- |
+| --- | --- |
 | `EVENT_OBJECT_FOCUS` | The document window, a link, a comment, or a form field has received keyboard focus. |
 | `AccessibleObjectFromEvent` | Returns the appropriate `IAccessible` object, either for the document or page itself or for the link, comment, or form field. The `childID` parameter identifies the object. |
 | `EVENT_OBJECT_LOCATIONCHANGE` | The caret (text cursor) has moved. If the caret is in a text edit field containing keyboard focus, the value of the text field may also have changed.  The `idObjectType` parameter for this event is `objid_caret`.  `AccessibleObjectFromEvent` returns an `IAccessible` object for the caret. |
