@@ -1,27 +1,20 @@
----
-title: Accessibility Overview
-description: Acrobat and PDFL SDKs and Acessibility: Overview
-contributors: Ben Rogers (Adobe Content Engineering)
----
+# Acrobat-PDFL SDK: Accessibility
 
-# Acrobat-PDFL SDKs and Accessibility
+Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers:
 
-## Overview
-
-Adobe provides methods to make the content of a PDF file available to assistive technology such as screen readers. On the Microsoft  Windows  operating system, Acrobat and Adobe Reader export PDF content as COM objects. Accessibility applications such as screen readers can interface with Acrobat or Adobe Reader in two ways:
-
-- Through the Microsoft Active Accessibility (MSAA) interface, using MSAA objects that Acrobat or Adobe Reader exports
-- Directly through exported COM objects that allow access to the PDF document’s internal structure, called the *document object model* (DOM).
+- On the Microsoft  Windows  operating system, Acrobat and Adobe Reader export PDF content as COM objects. Accessibility applications such as screen readers can interface with Acrobat or Adobe Reader in two ways:
+  - Through the Microsoft Active Accessibility (MSAA) interface, using MSAA objects that Acrobat or Adobe Reader exports
+  - Directly through exported COM objects that allow access to the PDF document’s internal structure, called the *document object model* (DOM).
 
 The DOM and MSAA models are related, and developers can use either or both. Acrobat issues notifications to accessibility clients about interesting events occurring in the PDF file window and responds to requests from such clients.
 
-> **Note**
+> **Warning**
 >
 > This document assumes that you are familiar with the ATK architecture.
 
 ## Determining rendering order and logical order
 
-When rendering documents on the screen, Acrobat provides visual fidelity in a device-independent manner. However, the order in which Acrobat renders characters is not necessarily the same as the order in which they are to be read. Acrobat does not use the standard system services assistive technology uses to capture on-screen content.
+When rendering documents on the screen, Acrobat provides visual fidelity in a device-independent manner. However, the order in which Acrobat renders characters is not necessarily the same as the order in which they are to be read. Acrobat does not use standard system services that are used by assistive technology to capture content displayed on the screen.
 
 *Tagged PDF*, introduced in PDF 1.4, defines a *logical structure* for the document that corresponds to the logical order of the content, regardless of the order in which the content is rendered. Acrobat uses the logical structure of a Tagged PDF document to determine word order. Through the accessibility interfaces, Acrobat can deliver the text of the PDF file as Unicode and can also make active elements such as links and form fields accessible.
 
@@ -40,11 +33,11 @@ The user controls the delivery method using the reading preferences.
 
 ## Processing inaccessible documents
 
-A document can be *inaccessible* if it is:
+A document can be *inaccessible* for one of the following reasons:
 
-- Protected by security settings
-- Empty or appears empty
-- Temporarily unavailable
+- It is protected by security settings
+- It is, or appears, empty
+- It is temporarily unavailable
 
 The interfaces treat inaccessible documents as follows:
 
@@ -112,25 +105,16 @@ Some events always return an object of a particular type. For others, you must d
 Acrobat posts the following `WinEvent` notifications:
 
 | Notification | Description |
-| --- | --- |
+|--------------|-------------|
 | `EVENT_OBJECT_FOCUS` | The document window, a link, a comment, or a form field has received keyboard focus. |
 | `AccessibleObjectFromEvent` | Returns the appropriate `IAccessible` object, either for the document or page itself or for the link, comment, or form field. The `childID` parameter identifies the object. |
 | `EVENT_OBJECT_LOCATIONCHANGE` | The caret (text cursor) has moved. If the caret is in a text edit field containing keyboard focus, the value of the text field may also have changed.  The `idObjectType` parameter for this event is `objid_caret`.  `AccessibleObjectFromEvent` returns an `IAccessible` object for the caret. |
 | `EVENT_OBJECT_STATECHANGE` | If the `childID` parameter is `CHILDID_SELF`, the current document or page has changed its state by opening or closing a comment. The client should update its copy of the document content. Only the `IAccessible` object for the comment changes when this occurs.  If `childID` is non-zero, it is the UID of the `IAccessible` object for a form field, such as a checkbox or radio button, whose state has changed. |
 | `EVENT_OBJECT_VALUECHANGE` | If the `childID` parameter is `CHILDID_SELF`, a new document or page has been opened or the current content has changed. The client should update its cached value of the document or page.  If the `childID` parameter is not `CHILDID_SELF`, it identifies the content on the page to which the user has turned his or her attention. For instance, if a page has scrolled or Acrobat has followed a link to a new page, it identifies the first visible content on the page. The client may wish to update its internal state about where it is reading the document. |
 
-test table
-
-| Parameter | Values                    |
-| --------- | ------------------------- |
-| color     | • red\<br/>• green\<br/>• blue |
-
-
-### Retrieving a PDF DOM object f
-
-or an event
+### Retrieving a PDF DOM object for an event
 
 To retrieve a DOM object, you can do one of the following actions:
 
 - Call the MSAA library function `AccessibleObjectFromEvent` to get an `IAccessible` object (as described above). Then call that `IAccessible` object’s `get_PDDomNode` method to get the corresponding DOM object. For more information, see [IGetPDDomNode interface](msaa-pdf.md#10950).
-- Call the MSAA library function `AccessibleObjectFromWindow` on the window containing the document and pass `OBJID_NATIVEOM` as the second parameter to return the DOM object for the document root.
+- Call the MSAA library function `AccessibleObjectFromWindow` on the window containing the document and pass `OBJID_NATIVEOM` as the second parameter. This returns the DOM object for the root of the document.

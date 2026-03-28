@@ -1,12 +1,4 @@
----
-title: Reading PDF Files Through MSAA
-description: Acrobat and PDFL SDKs and Acessibility: Reading PDF Files Through MSAA
-contributors: Ben Rogers (Adobe Content Engineering)
----
-
 # Reading PDF Files Through MSAA
-
-## Microsoft Active Accessibility Overview
 
 Microsoft Active Accessibility defines the `IAccessible` interface to applications. This interface consists of a set of methods and properties that are defined in the MSAA documentation.
 
@@ -84,6 +76,10 @@ HRESULT get_accID(long *id);
 
 **Parameters**
 
+| Parameter | Description |
+|-----------|-------------|
+| id | (Filled by the method) Returns the unique identifier of the `IAccessible` object. Must not be `NULL`. |
+
 **Returns**
 
 Always returns `s_ok`.
@@ -139,6 +135,12 @@ accNavigate (long navDir, VARIANT varStart, VARIANT* pvarEnd);
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| navDir \[in\] | The direction to navigate, in spatial order or logical order. These are the spatial navigation constants:  NAVDIR\_UP NAVDIR\_DOWN NAVDIR\_RIGHT NAVDIR\_LEFT  These are the logical navigation constants:  NAVDIR\_FIRSTCHILD NAVDIR\_LASTCHILD NAVDIR\_NEXT NAVDIR\_PREVIOUS * All `accNavigate` methods in PDF objects support the logical navigation directions. Only a few (PDF Structure Element, PDF ComboBox Form Field, and PDF ListBox Form Field) support the spatial navigation directions. Spatial navigation is only supported where it is explicitly noted. |
+| varStart  \[in\] | `CHILDID_SELF` to start navigation at the object itself, a child ID to start at one of the object’s child elements. |
+| pvarEnd  \[out, retval\] | Returns a structure that contains information about the destination object. See MSAA documentation for details. |
+
 **Returns**
 
 ```
@@ -154,6 +156,11 @@ get_accChild (VARIANT varChildID, IDispatch** ppdispChild);
 ```
 
 **Properties**
+
+| Parameter | Description |
+|-----------|-------------|
+| varChildID \[in\] | The child ID for which to obtain a pointer. This can be a UID or the 1-based index of the child to retrieve. |
+| ppdispChild  \[out, retval\] | Returns the address of the child’s `IDispatch` interface. |
 
 **Returns**
 
@@ -187,6 +194,10 @@ get_accParent (IDispatch** ppdispParent);
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| ppdispParent  \[out, retval\] |  |
+
 **Returns**
 
 ```
@@ -207,6 +218,10 @@ accDoDefaultAction (VARIANT varID);
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to perform the action for the object itself, a child ID to perform the action for one of the object’s child elements. |
+
 **Returns**
 
 ```
@@ -222,6 +237,11 @@ get_accDefaultAction(VARIANT varID, BSTR* pszDefaultAction);
 ```
 
 **Properties**
+
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+| pszDefaultAction  \[out, retval\] | Returns a localized string that describes the default action for the object, or `NULL` if this object has no default action. |
 
 **Returns**
 
@@ -239,6 +259,11 @@ get_accDescription (VARIANT varID, BSTR* pszDescription);
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+| pszDescription  \[out, retval\] | Returns a localized string that describes the object, or `NULL` if this object has no description. |
+
 **Returns**
 
 ```
@@ -254,6 +279,11 @@ get_accName (VARIANT varID, BSTR* pszName );
 ```
 
 **Properties**
+
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+| pszName  \[out, retval\] | Returns a localized string that contains the name of the object. |
 
 **Returns**
 
@@ -271,6 +301,11 @@ get_accRole (VARIANT varID, VARIANT* pvarRole );
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+| pvarRole  \[out, retval\] | Returns a structure that contain an object role constant in its `IVal` member. |
+
 **Returns**
 
 ```
@@ -287,6 +322,11 @@ get_accState (VARIANT varID, VARIANT* pvarState );
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+| pvarRole  \[out, retval\] | Returns a structure that contain an object state constant in its `IVal` member. |
+
 **Returns**
 
 ```
@@ -302,6 +342,11 @@ get_accValue (VARIANT varID, BSTR* pszValue );
 ```
 
 **Properties**
+
+| Parameter | Description |
+|-----------|-------------|
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+| pszValue  \[out, retval\] | Returns a localized string that contains the current value of the object. |
 
 **Returns**
 
@@ -323,6 +368,11 @@ accSelect (long flagsSelect, VARIANT varID);
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| flagsSelect \[in\] | Flags that control how the selection or focus operation is performed. A logical OR of these `SELFLAG` constants:  SELFLAG\_NONE SELFLAG\_TAKEFOCUS SELFLAG\_TAKESELECTION SELFLAG\_EXTENDSELECTION SELFLAG\_ADDSELECTION SELFLAG\_REMOVESELECTION |
+| varID \[in\] | `CHILDID_SELF` to select the object itself, a child ID to select one of the object’s child elements. |
+
 **Returns**
 
 ```
@@ -339,6 +389,10 @@ get_accFocus (VARIANT* pvarID);
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| pvarID  \[out, retval\] | Returns the address of a `VARIANT` structure that contains information about the object that has the focus. See MSAA documentation for details. |
+
 **Returns**
 
 ```
@@ -354,6 +408,10 @@ get_accSelection (VARIANT* pvarChildren);
 ```
 
 **Properties**
+
+| Parameter | Description |
+|-----------|-------------|
+| pvarChildren  \[out, retval\] | Returns the address of a `VARIANT` structure that contains information about the selected children. See the MSAA documentation for details. |
 
 **Returns**
 
@@ -373,6 +431,12 @@ accLocation (long* pxLeft, long* pyTop, long* pcxWidth, long* pcyHeight, VARIANT
 
 **Properties**
 
+| Parameter | Description |
+|-----------|-------------|
+| pxLeft, pxTop \[out\] | Return the x and y screen coordinates of the upper-left boundary of the object’s location. (The origin is the upper left corner of the screen.) |
+| pxWidth, pxHeight \[in\] | Return the object’s width and height in pixels. |
+| varID \[in\] | `CHILDID_SELF` to get information for the object itself, a child ID to get information for one of the object’s child elements. |
+
 **Returns**
 
 ```
@@ -388,6 +452,11 @@ accHitTest (long, long, VARIANT* pvarID);
 ```
 
 **Properties**
+
+| Parameter | Description |
+|-----------|-------------|
+| pxLeft, pxTop \[in\] | The x and y screen coordinates of the point to test. (The origin is the upper left corner of the screen.) |
+| pvarID \[out, retval\] | Address of a `VARIANT` structure that identifies the object at the specified point. The information returned depends on the location of the specified point in relation to the object whose `accHitTest` method is being called. You can use this method to determine whether the object at that point is a child of the object for which the method is called. For details, see the MSAA documentation. * For PDF objects, hit testing has been implemented in a very basic way; it does not identify the boundaries of the object itself with fine granularity, but reports whether or not the tested location is within the bounding box of an element or subtree. |
 
 **Returns**
 
@@ -437,6 +506,7 @@ Represents the contents of an entire PDF document. The subtree of `IAccessible` 
 > Content that is not part of the logical structure, such as page headers and footers, is not presented through the MSAA interface.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accHitTest | Returns the object at a given location if the location is within the document’s bounding box. |
 | accLocation | Returns the screen coordinates of the visible part of the document. |
 | accNavigate | Does not support spatial navigation (`NAVDIR_UP`, `NAVDIR_DOWN`, `NAVDIR_RIGHT`, `NAVDIR_LEFT`). |
@@ -460,6 +530,7 @@ Represents the contents of one page of a PDF document. The subtree of `IAccessib
 > Content that is not part of the logical structure, such as page headers and footers, is not presented through the MSAA interface.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accHitTest | Returns the object at the given location if the location is within the page’s bounding box. |
 | accLocation | Returns the screen coordinates of the visible part of the page. |
 | accNavigate | Does not support spatial navigation (`NAVDIR_UP`, `NAVDIR_DOWN`, `NAVDIR_RIGHT`, `NAVDIR_LEFT`). |
@@ -479,6 +550,7 @@ Represents the contents of one page of a PDF document. The subtree of `IAccessib
 Represents a protected document. When the permissions associated with a document disable accessibility, the contents are not exported through the MSAA interface. The `IAccessible` object for such a document informs the client that the document is protected.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accHitTest | Returns `NULL`. |
 | accLocation | The screen coordinates of the visible part of the document. |
 | accNavigate | Does not support spatial navigation (`NAVDIR_UP`, `NAVDIR_DOWN`, `NAVDIR_RIGHT`, `NAVDIR_LEFT`). |
@@ -497,6 +569,7 @@ Represents a protected document. When the permissions associated with a document
 Represents an empty or apparently empty document. A PDF file may have no contents to export through MSAA if, for instance, the file is a scanned image that has not been run through an optical character recognition (OCR) tool. The `IAccessible` object for empty documents and pages informs the client that there may be a problem, even if the document or page is genuinely empty.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accHitTest | Returns `NULL`. |
 | accLocation | Returns the screen coordinates of the visible part of the document. |
 | accNavigate | Does not support spatial navigation (`NAVDIR_UP`, `NAVDIR_DOWN`, `NAVDIR_RIGHT`, `NAVDIR_LEFT`). |
@@ -515,6 +588,7 @@ Represents an empty or apparently empty document. A PDF file may have no content
 Represents a subtree of the logical structure tree for the document. It might correspond to a paragraph, a heading, a chapter, a span of text within a word, or a figure.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | If the element has state `STATE_SYSTEM_LINKED`, performs the action associated with the link. |
 | accHitTest | Returns this object or any child at the given location if the location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the subtree. |
@@ -535,6 +609,7 @@ Represents a subtree of the logical structure tree for the document. It might co
 Corresponds to a leaf node of the logical structure tree for the document. It corresponds to marking commands in the page content stream.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | If the element has state `STATE_SYSTEM_LINKED`, performs the action associated with the link. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the element. |
@@ -558,6 +633,7 @@ Corresponds to a comment, such as a text note or highlight comment, attached to 
 > PDF comments cover a range of objects, many of which do not map into the standard MSAA roles. The `IAccessible` object captures the most important properties of comments.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | The default action depends on the type of comment. It can, for example, open or close a popup. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -579,6 +655,7 @@ Corresponds to a comment, such as a text note or highlight comment, attached to 
 Corresponds to a link in the document.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | Performs the link’s action. |
 | accHitTest | Returns this object or any child at the given location if the location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -600,6 +677,7 @@ Corresponds to a link in the document.
 Corresponds to a text form field in the document.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | Sets focus to the text field for editing. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -619,6 +697,7 @@ Corresponds to a text form field in the document.
 Corresponds to a button form field in the document.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | Presses the button. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -637,6 +716,7 @@ Corresponds to a button form field in the document.
 Corresponds to a checkbox form field in the document.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | Checks or unchecks the box. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -655,6 +735,7 @@ Corresponds to a checkbox form field in the document.
 Corresponds to a radio button form field in the document.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | Clicks the radio button. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -673,6 +754,7 @@ Corresponds to a radio button form field in the document.
 Corresponds to a combo box form field in the document. It can represent either the combo box itself, or a list item in a combo box.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | - The combo box does not have a default action. * For a list item, the default action is “DoubleClick”, which selects the list item. |
 | accHitTest | - For a combo box, returns this object or any child at the given location if the location is within the bounding box of this object. * For a list item, returns this object if the given location is within the bounding box of this object. |
 | accLocation | - For a combo box, returns the screen coordinates of the visible part of the object. * For a list item, the location is always reported as 0,0,0,0. |
@@ -694,6 +776,7 @@ Corresponds to a combo box form field in the document. It can represent either t
 Corresponds to a list box form field in the document. It can represent either the list box itself or a list item in a list box.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | - The list box does not have a default action. * For a list item, the default action is “Double Click,” which selects the item. |
 | accHitTest | - For a list box, returns this object or any child at the given location if the location is within the bounding box of this object. * For a list item, returns this object if the given location is within the bounding box of this object. |
 | accLocation | - For a list box, returns the screen coordinates of the visible part of the object. * For a list item, the location is always reported as 0,0,0,0. |
@@ -715,6 +798,7 @@ Corresponds to a list box form field in the document. It can represent either th
 Corresponds to a digital signature form field in the document.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accDoDefaultAction | Signs the document if the signature field is unsigned and has either been opened with Acrobat or the document has permissions that allow signing. If the document is signed, the default action brings up a dialog box containing the signature information. |
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the visible part of the object. |
@@ -734,6 +818,7 @@ Corresponds to a digital signature form field in the document.
 Represents a caret (text cursor). If a document contains the system caret because focus is within an editable text field or an editable ComboBox field, clients can obtain an `IAccessible` object for the caret to determine where it is located.
 
 | Method | Implementation notes |
+|--------|----------------------|
 | accHitTest | Returns this object if the given location is within the bounding box of this object. |
 | accLocation | Returns the screen coordinates of the caret, both when the caret is in a form field and when it is in the document. |
 | get\_accChildCount | The child count is 0. |

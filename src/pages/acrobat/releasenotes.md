@@ -6,3 +6,5 @@ contributors: Ben Rogers (Adobe Content Engineering)
 
 
 Release Notes
+
+I went to the store

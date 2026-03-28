@@ -1,12 +1,4 @@
----
-title: Reading PDF Files Through the DOM Interface
-description: Acrobat and PDFL SDKs and Acessibility: Reading PDF Files Through the DOM Interface
-contributors: Ben Rogers (Adobe Content Engineering)
----
-
 # Reading PDF Files Through the DOM Interface
-
-## Overview
 
 Acrobat 6.0 and later defines a document object model (DOM) that provides more complete access to the document structure than the MSAA interface. The Accessibility plug-in defines and exports five COM interfaces in `AcrobatAccess.lib` that expose Acrobat’s document hierarchy:
 
@@ -510,6 +502,7 @@ LRESULT GetAttribute (BSTR pszAttr, BSTR pszOwner,  BSTR *pszAttrVal)
 Some of the attributes that are useful for assistive technology are listed here. For a complete list, see the [PDF Reference](https://www.adobe.com/go/pdfreference)..
 
 | Attribute | Owner | Value |
+|-----------|-------|-------|
 | Lang |  | ISO language code for text within this element. |
 | Alt |  | Text containing an equivalent replacement for the content of this element.  Automatically incorporated into the value or text content of the element or any of its ancestor elements. |
 | ActualText |  | Text which is an exact replacement for the content of this element, for example, the text of an illuminated character.  Automatically incorporated into the value or text content of the element or any of its ancestor elements. |

@@ -26,3 +26,5 @@ do i need to modify Action yml? when?
 
 dd Metadata (title, keywords, description etc) for awesome Search/SEO results, include Analytics for reporting, check Accessibility (run AXE) and test all links on Stage before going live. Best Practices can be found on this wiki. Please reach out if you have any questions.
 
+
+table bullets: • red\<br/>• green\<br/>• blue
