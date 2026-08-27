@@ -1,9 +1,11 @@
+<a id="acrobat-pdfl-sdk-using-batch-sequences"></a>
 # Acrobat- PDFL SDK: Using Batch Sequences
 
 A batch sequence performs repetitive operations on a collection of *selected files*. Batch processing sequences, like all JavaScript code, are executed as a result of a particular event. During the event, the script is repeatedly executed on each of the selected files.
 
 This chapter addresses some of the principles of writing a batch sequence that uses the Execute JavaScript batch command. With these principles in mind, and a knowledge of the JavaScript API for Acrobat, you will be able to write your own batch sequences.
 
+<a id="creating-and-running-a-batch-sequence"></a>
 ## Creating and running a batch sequence
 
 A batch sequence is created through the UI of Acrobat Pro. In version 8, the batch sequence feature is accessed by selecting Advanced > Document Processing > Batch Sequences. The following batch sequence files are shipped with Acrobat Pro:
@@ -27,6 +29,7 @@ Task: For each of the selected files, set the `disclosed` property to `true`.  (
 
 The procedure below steps you through the creation of a batch sequence. The sequence inserts the script `this.disclosed = true` in each of the selected documents as document JavaScript.
 
+<a id="create-a-batch-sequence-that-sets-the-disclosed-property-to-true"></a>
 ### Create a batch sequence that sets the disclosed property to true:
 
 1. Select Tools Pane > Action Wizard > Create New Action.
@@ -47,6 +50,7 @@ The procedure below steps you through the creation of a batch sequence. The sequ
 
 To run this new script you must first select the collection of files that the batch sequence will process. The general procedure below assumes the Edit Sequence dialog box is not open. Follow the procedure for the new Make disclosed batch sequence.
 
+<a id="to-select-files"></a>
 ### To select files:
 
 1. Choose Tools Pane > Action Wizard.
@@ -60,6 +64,7 @@ To run this new script you must first select the collection of files that the ba
 
 Finally, run your new batch sequence.
 
+<a id="to-run-a-batch-sequence"></a>
 ### To run a batch sequence:
 
 1. Choose **Advanced** > **Document Processing** > **Batch Processing**.
@@ -70,6 +75,7 @@ Finally, run your new batch sequence.
 
 When creating a batch sequence to perform a task, you can use one or more of the batch commands listed in the Edit Sequence dialog box in combination with the Execute JavaScript batch command; for example, one sample sequence uses Execute JavaScript to sign the document, and then uses the Security batch command to set the security of the document.
 
+<a id="batch-processing-objects"></a>
 ## Batch processing objects
 
 When you run a batch sequence that contains an Execute JavaScript batch command, a *batch event* occurs and an `event` object is created. This object contains the following properties:
@@ -79,6 +85,7 @@ When you run a batch sequence that contains an Execute JavaScript batch command,
 | target | During a batch sequence, the `target` property of the `event` object points to the Doc object of the file currently being processed. For example, `event.target.path` is the device-independent path of the file currently being processed. * The `this` object also points to the Doc object of the file currently being processed in the batch. |
 | rc | The `rc` property contains a return code for each application of the sequence. Setting `rc` to `false` aborts the batch process, so that no further files are processed (if any remain in the selected files collection). |
 
+<a id="aborting-a-script"></a>
 ### Aborting a script
 
 Setting `event.rc` `=` `false` aborts the batch process, but does not abort the script itself. The remaining code in the program flow is executed. One strategy to avoid the continuation of the flow is to throw an exception, and set `event.rc` `=` `false` with the catch:
@@ -95,6 +102,7 @@ try {
      }
 ```
 
+<a id="using-the-this-object"></a>
 ### Using the this object
 
 The this object points to the Doc object, for example, the following script gathers all annotations in the document currently being processed, sorts them by author, and returns an array of annotation objects for further manipulation:
@@ -109,6 +117,7 @@ Alternatively, you can also use `event.target` :
 var annots = event.target.getAnnots({nSortBy: ANSB_Author});
 ```
 
+<a id="global-variables"></a>
 ## Global variables
 
 Variables that must hold their values across document processing must be declared as global.
@@ -131,6 +140,7 @@ At the end of the batch job, any global variables can be removed. For example:
 delete global.counter;
 ```
 
+<a id="beginning-and-ending-a-batch-job"></a>
 ## Beginning and ending a batch job
 
 More complicated batch jobs that involve cross-document reporting may need some start-up, or *Begin Job* code, to initialize global variables before processing begins. After the files are processed, you can use *End Job* code to clean up or write a report.
@@ -173,6 +183,7 @@ The following code is a general outline of how you can insert *Begin Job* and *E
  }
 ```
 
+<a id="debugging-and-testing-tips"></a>
 ## Debugging and testing tips
 
 The batch feature is very useful for performing a number of tasks on large scale. However, it poses its own dangers. Any automated utility that saves files to a hard drive can potentially create havoc on that drive.

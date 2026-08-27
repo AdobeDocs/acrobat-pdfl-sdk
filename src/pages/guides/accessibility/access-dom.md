@@ -1,3 +1,4 @@
+<a id="reading-pdf-files-through-the-dom-interface"></a>
 # Reading PDF Files Through the DOM Interface
 
 Acrobat 6.0 and later defines a document object model (DOM) that provides more complete access to the document structure than the MSAA interface. The Accessibility plug-in defines and exports five COM interfaces in `AcrobatAccess.lib` that expose Acrobat’s document hierarchy:
@@ -11,10 +12,13 @@ Acrobat 6.0 and later defines a document object model (DOM) that provides more c
 
 Clients of these interfaces must include the files `AcrobatAccess.h`, `AcrobatAccess_i.c` and `IPDDom.h`.
 
+<a id="17539"></a>
+<a id="ipddomnode-data-types"></a>
 ## IPDDomNode data types
 
 This section describes the data types for the PDF DOM hierarchy.
 
+<a id="cpddomnodetype"></a>
 ### CPDDomNodeType
 
 Defines the type of a node in the PDF DOM hierarchy returned by `GetType`.
@@ -46,6 +50,8 @@ typedef enum {
 } CPDDomNodeType;
 ```
 
+<a id="51223"></a>
+<a id="pddom-fontstyle"></a>
 ### PDDom\_FontStyle
 
 Constants for font styles returned by `GetFontInfo`.
@@ -61,6 +67,8 @@ typedef enum {
 } PDDOM_FontStyle;
 ```
 
+<a id="39567"></a>
+<a id="fontinfostate"></a>
 ### FontInfoState
 
 Constants for font status returned by `GetFontInfo`.
@@ -74,6 +82,7 @@ typedef enum {
 } FontInfoState;
 ```
 
+<a id="docstate"></a>
 ### DocState
 
 Constants for document status returned by `GetDocInfo` in the IPDDomDocument interface.
@@ -87,6 +96,7 @@ enum DocState {
 };
 ```
 
+<a id="noderelationship"></a>
 ### NodeRelationship
 
 Constants returned by `Relationship` in the IPDDomNodeExt interface.
@@ -102,10 +112,14 @@ enum NodeRelationship {
 };
 ```
 
+<a id="16187"></a>
+<a id="ipddomnode-methods"></a>
 ## IPDDomNode methods
 
 `IPDDomNode` defines methods that apply to all elements of the document hierarchy.
 
+<a id="33811"></a>
+<a id="words-and-lines-in-text"></a>
 ### Words and lines in text
 
 An `IPDDomNode` that represents a text node has the role `CPDDomNode_Text`.  By default, the children of text nodes are word nodes. To get the word children of a text node, call the `IPDomNode` method `GetChild`.  An `IPDDomNode` that represents a word has the role `CPDDomNode_Word`.
@@ -116,6 +130,7 @@ An `IPDDomNode` that represents a text node has the role `CPDDomNode_Text`.  By 
 
 Text can also be thought of as having lines as children. To get the line children of a text node, call the `IPDomNode` method `GetTextInLines`.  This method returns a new object for the text node. Subsequently, calling `getChild` on this object returns lines as children. An `IPDDomNode` that represents a line has the role `CPDDomNode_LineSeg`.  The children of that line node will be the words in that line.
 
+<a id="getparent"></a>
 ### GetParent
 
 `ppDispParent` returns the `IPDDomNode` for the parent of this element if there ís a parent element in the DOM hierarchy, or `NULL` if this element is the root element of the hierarchy.
@@ -124,6 +139,7 @@ Text can also be thought of as having lines as children. To get the line childre
 LRESULT GetParent (IDispatch **ppDispParent)
 ```
 
+<a id="gettype"></a>
 ### GetType
 
 `nodeType` returns the `CPDDomNodeType` of this element.
@@ -132,16 +148,19 @@ LRESULT GetParent (IDispatch **ppDispParent)
 LRESULT GetType (long *nodeType)
 ```
 
+<a id="76623"></a>
+<a id="getchild"></a>
 ### GetChild
 
 `ppDispChild` returns the `IPDDomNode` for the child of this element at position `index`, or `NULL` if there is no child at position `index`.
 
-For a text node, this returns child words; see [Words and lines in text](access-dom.md#33811).
+For a text node, this returns child words; see [Words and lines in text](./access-dom.md#33811).
 
 ```
 LRESULT GetChild (ASInt32 index,  IDispatch **ppDispChild)
 ```
 
+<a id="getchildcount"></a>
 ### GetChildCount
 
 `pCountChildren` returns the number of children of this element.
@@ -150,6 +169,7 @@ LRESULT GetChild (ASInt32 index,  IDispatch **ppDispChild)
 LRESULT GetChildCount (long *pCountChildren)
 ```
 
+<a id="getname"></a>
 ### GetName
 
 `pszName` returns the name of this element.
@@ -162,6 +182,7 @@ LRESULT GetChildCount (long *pCountChildren)
 LRESULT GetName (BSTR *pszName)
 ```
 
+<a id="getvalue"></a>
 ### GetValue
 
 `pszValue` returns the value of this element.
@@ -176,6 +197,7 @@ LRESULT GetName (BSTR *pszName)
 LRESULT GetValue (BSTR *pszValue)
 ```
 
+<a id="issame"></a>
 ### IsSame
 
 If `pNode` refers to the same node as this element, `isSame` returns `true`.
@@ -184,6 +206,7 @@ If `pNode` refers to the same node as this element, `isSame` returns `true`.
 LRESULT IsSame (IPDDomNode *pNode,  BOOL *isSame)
 ```
 
+<a id="gettextcontent"></a>
 ### GetTextContent
 
 `pszText` returns the value of all text in the document subtree rooted at this element. Alternate text, actual text, and expansion attributes are included and may override text within the document.
@@ -192,6 +215,7 @@ LRESULT IsSame (IPDDomNode *pNode,  BOOL *isSame)
 LRESULT GetTextContent (BSTR *pszText)
 ```
 
+<a id="getfontinfo"></a>
 ### GetFontInfo
 
 These values describe the font characteristics for the text content of this element.
@@ -210,6 +234,7 @@ These values describe the font characteristics for the text content of this elem
 LRESULT GetFontInfo (long* fontStatus,  BSTR* pszName,  float* fontSize,  long* fontAttr, float* red,  float* green,  float* blue)
 ```
 
+<a id="getlocation"></a>
 ### GetLocation
 
 Returns the screen coordinates of the upper left corner, width, and height of the content of the element. Note that this is not exactly the same as the bounding box. If the element spans multiple pages, this method returns only the location on the first visible page. If none of the element’s contents are visible, this method returns an empty location.
@@ -218,6 +243,7 @@ Returns the screen coordinates of the upper left corner, width, and height of th
 LRESULT GetLocation (long *pxLeft, ong *pyTop,  long *pcxWidth,  long *pcyHeight)
 ```
 
+<a id="getfromid"></a>
 ### GetFromID
 
 `ppDispNode` returns the `IPDDomNode` for the element in the same document with the matching ID attribute, or `NULL` if there is no such element.
@@ -228,6 +254,7 @@ The `id` value is not the same as the UID returned by `IAccID` in the MSAA inter
 LRESULT GetFromID (BSTR id,  IDispatch **ppDispNode)
 ```
 
+<a id="getiaccessible"></a>
 ### GetIAccessible
 
 Returns the MSAA `IAccessible` element corresponding to this element. (Acrobat exports an MSAA interface to the document, as well as a DOM interface.)
@@ -240,6 +267,7 @@ Use the method `get_PDDomNode` to find the `IPDDomNode` corresponding to a PDF d
 LRESULT GetIAccessible (IDispatch **ppIAccessible)
 ```
 
+<a id="scrollto"></a>
 ### ScrollTo
 
 Makes the contents of the node visible. If the contents cover more than one page, only the contents on the first page are made visible. If the entire contents do not fit, the upper left portion is shown.
@@ -248,9 +276,11 @@ Makes the contents of the node visible. If the contents cover more than one page
 LRESULT ScrollTo()
 ```
 
+<a id="54271"></a>
+<a id="gettextinlines"></a>
 ### GetTextInLines
 
-`ppDispTextLines` returns an `IPDDomNode` whose children (obtained by calling `GetChild`) have the role `CPDDomNode_LineSeg` ; see [Words and lines in text](access-dom.md#33811).
+`ppDispTextLines` returns an `IPDDomNode` whose children (obtained by calling `GetChild`) have the role `CPDDomNode_LineSeg` ; see [Words and lines in text](./access-dom.md#33811).
 
 `visibleOnly` controls whether the children include only lines that contain at least some visible text.
 
@@ -260,10 +290,13 @@ If the role the node is not `CPDDomNode_Text`, this method returns `E_FAIL`.
 LRESULT GetTextInLines (BOOL visibleOnly,  IDispatch** ppDispTextLines)
 ```
 
+<a id="70643"></a>
+<a id="ipddomnodeext-methods"></a>
 ## IPDDomNodeExt methods
 
 The `IPDDomNodeExt` interface is exported by every object that exports `IPDDomNode`.  For Acrobat 7.0 and later, the following methods are available from all objects.
 
+<a id="navigate"></a>
 ### Navigate
 
 Traverses to another user interface element within a container and retrieves the object. `navDir` indicates which type of navigation is desired, and the node in that direction is returned in `next`.  This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -274,6 +307,7 @@ long navDir,
 IPDDomNode* next);
 ```
 
+<a id="scrolltoex"></a>
 ### ScrollToEx
 
 Determines where to scroll when the item is too large to fit in the window. If both parameters are `true`, this method is equivalent to `ScrollTo`.  This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -284,6 +318,7 @@ BOOL favorLeft,
 BOOL favorTop);
 ```
 
+<a id="setfocus"></a>
 ### SetFocus
 
 Sets the focus to this node, if it can take focus. This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -292,6 +327,7 @@ Sets the focus to this node, if it can take focus. This method is defined in the
 HRESULT SetFocus();
 ```
 
+<a id="getstate"></a>
 ### GetState
 
 Returns a set of state flags identical to those returned by `get_accState` for the corresponding `IAccessible` object. This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -301,6 +337,7 @@ HRESULT GetState(
 long* state);
 ```
 
+<a id="getindex"></a>
 ### GetIndex
 
 Returns the child index of this node in its parent. The root node returns -1. This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -310,6 +347,7 @@ HRESULT GetIndex(
 long* pIndex);
 ```
 
+<a id="getpagenum"></a>
 ### GetPageNum
 
 Returns the first and last pages on which the node appears. This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -320,6 +358,7 @@ long* firstPage,
 long* lastPage);
 ```
 
+<a id="dodefaultaction"></a>
 ### DoDefaultAction
 
 Executes the default action for a node. This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -328,6 +367,7 @@ Executes the default action for a node. This method is defined in the `IPDDomNod
 HRESULT DoDefaultAction();
 ```
 
+<a id="relationship"></a>
 ### Relationship
 
 Returns the relationship of the `node` parameter to this node. The value is of type `NodeRelationship`, defined in IPDDom.h. This method is defined in the `IPDDomNodeExt` interface on any node.
@@ -338,10 +378,12 @@ PDDomNode* node,
 long* pRel);
 ```
 
+<a id="ipddomdocument-methods"></a>
 ## IPDDomDocument methods
 
 The root object for the page or document exports the `IPDDomDocument` interface. For Acrobat 7.0 and later, the following methods are available from the root object.
 
+<a id="setcaret"></a>
 ### SetCaret
 
 Sets the caret to the specified index in the word. If the index is 0, it is placed at the beginning of the word.
@@ -352,6 +394,7 @@ IPDDomWord* node,
 long index);
 ```
 
+<a id="getcaret"></a>
 ### GetCaret
 
 Returns the screen location of the caret, the node containing the caret, and the zero-based index of the caret within the node. The node may be a word node or a form field. If there is no active caret, the call returns `S_FALSE`.
@@ -366,6 +409,7 @@ IPDDomNode** node,
 long* index);
 ```
 
+<a id="nextfocusnode"></a>
 ### NextFocusNode
 
 Gets the next or previous focusable `IPDDomNode`.  If `forward` is `true`, it gets the next focusable node. Returns `NULL` if there is not another focusable node in the selected direction. Searches only the current DOM tree, which means that in page mode it will only return results within the page tree instead of the entire document.
@@ -376,6 +420,7 @@ BOOL forward,
 IPDDomNode* node);
 ```
 
+<a id="getfocusnode"></a>
 ### GetFocusNode
 
 Returns the `IPDDomNode` with focus. The node is set to `NULL` if the focus is on the document (rather than an annotation) or if the focus is not within the document.
@@ -385,6 +430,7 @@ HRESULT GetFocusNode(
 IPDDomNode* node);
 ```
 
+<a id="selecttext"></a>
 ### SelectText
 
 Sets the text selection by identifying the start and end locations of the selection.
@@ -397,6 +443,7 @@ IPDDomWord* endNode,
 long endIndex);
 ```
 
+<a id="gettextselection"></a>
 ### GetTextSelection
 
 Retrieves the value of the selected text.
@@ -406,6 +453,7 @@ HRESULT GetTextSelection(
 BSTR* selection);
 ```
 
+<a id="getselectionbounds"></a>
 ### GetSelectionBounds
 
 **Not implemented**.  This procedure always returns `S_FALSE`.
@@ -418,6 +466,7 @@ IPDDomWord** stop,
 long* stopIndex);
 ```
 
+<a id="getdocinfo"></a>
 ### GetDocInfo
 
 Returns the full pathname of the file, how many pages it contains, and the range of pages that are at least partially visible. The `status` indicates whether there are issues with this document or page, such as access controls prohibiting access or an apparently empty page or document. If `lang` is not `NULL`, it is the default language used in the document.
@@ -436,6 +485,7 @@ long* status,
 BSTR* lang);
 ```
 
+<a id="gotopage"></a>
 ### GoToPage
 
 Positions the document so that the requested page is visible.
@@ -449,10 +499,13 @@ HRESULT GoToPage(
 long pageNum);
 ```
 
+<a id="99257"></a>
+<a id="ipddomelement-methods"></a>
 ## IPDDomElement Methods
 
 `IPDDomElement` defines additional methods that apply only to structure elements.
 
+<a id="gettagname"></a>
 ### GetTagName
 
 `pszTagName` returns the structural element tag for this element.
@@ -461,6 +514,7 @@ long pageNum);
 LRESULT GetTagName (BSTR *pszTagName)
 ```
 
+<a id="getstdname"></a>
 ### GetStdName
 
 `pszStdName` returns the standard role for this element. The standard roles are:
@@ -475,6 +529,8 @@ For details, see the [PDF Reference](https://www.adobe.com/go/pdfreference).
 LRESULT GetStdName (BSTR *pszStdName)
 ```
 
+<a id="85767"></a>
+<a id="getid"></a>
 ### GetID
 
 `pszId` returns the ID string associated with this element, if it has been defined.
@@ -485,6 +541,7 @@ The `id` value is not the same as the UID returned by `IAccID` in the MSAA inter
 LRESULT GetID (BSTR *pszId)
 ```
 
+<a id="getattribute"></a>
 ### GetAttribute
 
 `pszAttrVal` returns the value of the specified attribute for specified owner for this element. Owner can be `NULL` or an empty string.
@@ -497,6 +554,7 @@ The set of owners and attributes is open-ended, but the standard structure attri
 LRESULT GetAttribute (BSTR pszAttr, BSTR pszOwner,  BSTR *pszAttrVal)
 ```
 
+<a id="accessibility-attributes"></a>
 #### Accessibility attributes
 
 Some of the attributes that are useful for assistive technology are listed here. For a complete list, see the [PDF Reference](https://www.adobe.com/go/pdfreference)..
@@ -513,10 +571,13 @@ Some of the attributes that are useful for assistive technology are listed here.
 | Scope | Table | The scope of this table header cell: `Row`, `Column`, or `Both`. |
 | Summary | Table | Text that describes the table’s purpose and structure, for use in non-visual rendering such as speech or Braille. |
 
+<a id="96578"></a>
+<a id="ipddomword-methods"></a>
 ## IPDDomWord methods
 
 `IPDDomWord` defines additional methods that apply only to individual words in the document.
 
+<a id="lastwordofline"></a>
 ### LastWordOfLine
 
 If this is the last word in a line on the page, `isLast` returns `true`.  Use this function to determine where the line breaks occur in text. Note that line breaks are inserted into the text content for elements.
@@ -525,10 +586,12 @@ If this is the last word in a line on the page, `isLast` returns `true`.  Use th
 LRESULT LastWordOfLine (BOOL *isLast)
 ```
 
+<a id="ipddomgroupinfo-method"></a>
 ## IPDDomGroupInfo method
 
 `IPDDomGroupInfo` defines an additional method that applies to radio buttons, list boxes, and combo boxes.
 
+<a id="getgroupposition"></a>
 ### GetGroupPosition
 
 `groupSize` returns the number of items in the radio button set, the list, or the combo box drop-down list. `position` returns the 1-based index of the node in that set of values. That is, a value of 1 for `position` indicates the first value in the set.

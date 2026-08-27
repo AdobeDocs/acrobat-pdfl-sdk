@@ -1,3 +1,26 @@
+---
+type: project
+title: Acrobat and PDFL SDK
+name: Acrobat and PDFL SDK
+description: SDK files in RST format ready for conversion to MD.
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/README.md
+tags:
+- project
+- repo
+- RST
+- markdown
+- formats
+- format conversion
+- ADP
+author: brogers
+generated:
+  by: human:brogers
+  at: '2026-08-21T23:28:30-04:00'
+memory: null
+domain: content
+icon: none
+timestamp: 2026-08-16 02:50:04+00:00
+---
 # Documentation
 
 Please xxx see the [ADP Developer Site Documentation](https://developer-stage.adobe.com/dev-docs-reference/).

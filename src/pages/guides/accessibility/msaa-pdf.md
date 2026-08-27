@@ -1,3 +1,4 @@
+<a id="reading-pdf-files-through-msaa"></a>
 # Reading PDF Files Through MSAA
 
 Microsoft Active Accessibility defines the `IAccessible` interface to applications. This interface consists of a set of methods and properties that are defined in the MSAA documentation.
@@ -6,11 +7,12 @@ Acrobat implements and exports a set of `IAccessible` objects of different types
 
 An MSAA client can retrieve an `IAccessible` object for a user interface element in the following four ways:
 
-- Set a `WinEvent` hook, receive a notification, and call `AccessibleObjectFromEvent` to retrieve an `IAccessible` interface pointer for the user interface element that generated the event. See [Handling event notifications](index.md#21082) for details.
+- Set a `WinEvent` hook, receive a notification, and call `AccessibleObjectFromEvent` to retrieve an `IAccessible` interface pointer for the user interface element that generated the event. See [Handling event notifications](./index.md#21082) for details.
 - Call `AccessibleObjectFromWindow` and pass the user interface element’s window handle. Each open document in Acrobat is associated with its own window handle.
 - Call `AccessibleObjectFromPoint` and pass a screen location that lies within the user interface element’s bounding rectangle.
 - Call an `IAccessible` method such as `accNavigate` or `get_accParent` to move to a different `IAccessible` object.
 
+<a id="acrobat-implementation-of-iaccessible-objects"></a>
 ## Acrobat implementation of IAccessible objects
 
 Each type of `IAccessible` object has a different implementation of the standard methods:
@@ -20,21 +22,24 @@ Each type of `IAccessible` object has a different implementation of the standard
 
 > **Note**
 >
-> These elements are explicit in the DOM interface; see [Reading PDF Files Through the DOM Interface](access-dom.md#30124).
+> These elements are explicit in the DOM interface; see [Reading PDF Files Through the DOM Interface](./access-dom.md#reading-pdf-files-through-the-dom-interface).
 
-For each document, Acrobat builds a tree of `IAccessible` objects representing the document and its internal structure. Because there is just one window handle associated with the document, Acrobat posts all event notifications to that window. In each notification, a `childID` identifies an `IAccessible` object for an element in the document. For example, when the user tabs to the next link, the `EVENT_OBJECT_FOCUS` notification includes a `childID` that is the UID of the link object. See [Handling event notifications](index.md#21082).
+For each document, Acrobat builds a tree of `IAccessible` objects representing the document and its internal structure. Because there is just one window handle associated with the document, Acrobat posts all event notifications to that window. In each notification, a `childID` identifies an `IAccessible` object for an element in the document. For example, when the user tabs to the next link, the `EVENT_OBJECT_FOCUS` notification includes a `childID` that is the UID of the link object. See [Handling event notifications](./index.md#21082).
 
 The following interfaces are exported from the `IAccessible` object by Acrobat:
 
+<a id="10950"></a>
+<a id="igetpddomnode-interface"></a>
 ## IGetPDDomNode interface
 
-This interface exports one function, `get_PDDomNode`, which returns a DOM object. The methods described in [Reading PDF Files Through the DOM Interface](access-dom.md#30124)” can then be used on this object.
+This interface exports one function, `get_PDDomNode`, which returns a DOM object. The methods described in [Reading PDF Files Through the DOM Interface](./access-dom.md#reading-pdf-files-through-the-dom-interface)” can then be used on this object.
 
+<a id="get-pddomnode"></a>
 ### get\_PDDomNode
 
-Returns a DOM object. For more information, see [Reading PDF Files Through the DOM Interface](access-dom.md#30124).
+Returns a DOM object. For more information, see [Reading PDF Files Through the DOM Interface](./access-dom.md#reading-pdf-files-through-the-dom-interface).
 
-`varID` is the same as for the other MSAA methods (see [Descriptive properties and methods](msaa-pdf.md#89440))
+`varID` is the same as for the other MSAA methods (see [Descriptive properties and methods](./msaa-pdf.md#89440))
 
 ```
 HRESULT get_PDDomNode(
@@ -42,10 +47,12 @@ VARIANT varID,
 IPDDomNode **ppDispDoc);
 ```
 
+<a id="iselecttext-interface"></a>
 ## ISelectText interface
 
 In Acrobat 7.0, the `ISelectText` interface is an interface exported by the `IAccessible` objects. It exports one function, `selectText`, that sets the text selection, but specifies the end location via `IAccessible` objects instead of DOM nodes. The `ISelectText` interface is available from the root `IAccessible` object.
 
+<a id="selecttext"></a>
 ### selectText
 
 Sets the text selection. `startAccID` and `endAccID` are the `accID` identifiers for the starting and ending `IAccessible` elements, and `startIndex` and `endIndex` are zero-based indexes into the text of those `IAccessible` objects.
@@ -58,6 +65,8 @@ long endAccID,
 long endIndex);
 ```
 
+<a id="99842"></a>
+<a id="identifying-iaccessible-objects-in-a-document"></a>
 ## Identifying IAccessible objects in a document
 
 You can identify the type of an `IAccessible` object by using the `get_accRole` method to get its Role attribute. However, you must also distinguish individual objects from others of the same type. You can do this by means of a unique identifier (UID) defined by Acrobat.
@@ -66,6 +75,7 @@ The `IAccessible` objects defined by Acrobat export a private interface, `IAccID
 
 When a value-change notification or a focus notification has a non-zero `childID`, the value of `childID` is the UID of one of the objects on the page or document. Use the UID to uniquely identify the object that is the target of the notification.
 
+<a id="get-accid"></a>
 ### get\_accID
 
 Returns an identifier that is unique within the open document or page.
@@ -112,19 +122,24 @@ IServiceProvider *sp = NULL;
  }
 ```
 
+<a id="29922"></a>
+<a id="iaccessible-method-summary"></a>
 ## IAccessible method summary
 
 This section provides a brief syntax summary of the `IAccessible` interface methods as defined by MSAA. All methods return `HRESULT`.  The methods and properties are organized into the following groups:
 
-- [Navigation and hierarchy](msaa-pdf.md#73526)
-- [Descriptive properties and methods](msaa-pdf.md#89440)
-- [Selection and focus](msaa-pdf.md#22290)
-- [Spatial mapping](msaa-pdf.md#57514)
+- [Navigation and hierarchy](./msaa-pdf.md#73526)
+- [Descriptive properties and methods](./msaa-pdf.md#89440)
+- [Selection and focus](./msaa-pdf.md#22290)
+- [Spatial mapping](./msaa-pdf.md#57514)
 
+<a id="73526"></a>
+<a id="navigation-and-hierarchy"></a>
 ## Navigation and hierarchy
 
 This section provides information on the APIs used in navigation and to traverse the hierarchy.
 
+<a id="accnavigate"></a>
 ### accNavigate
 
 Traverses to another user interface element within a container and retrieves the object. All visual objects support this method.
@@ -147,6 +162,7 @@ accNavigate (long navDir, VARIANT varStart, VARIANT* pvarEnd);
 HRESULT
 ```
 
+<a id="get-accchild"></a>
 ### get\_accChild
 
 Retrieves an `IDispatch` interface pointer for the specified child, if one exists. All objects support this property.
@@ -168,6 +184,7 @@ get_accChild (VARIANT varChildID, IDispatch** ppdispChild);
 HRESULT
 ```
 
+<a id="get-accchildcount"></a>
 ### get\_accChildCount
 
 Retrieves the number of children that belong to this object. All objects support this property.
@@ -178,12 +195,19 @@ get_accChildCount (long* pcountChildren);
 
 **Properties**
 
+<table>
+<tbody>
+
+</tbody>
+</table>
+
 **Returns**
 
 ```
 HRESULT
 ```
 
+<a id="get-accparent"></a>
 ### get\_accParent
 
 Retrieves an `IDispatch` interface pointer for the parent of this object. All objects support this property.
@@ -204,10 +228,13 @@ get_accParent (IDispatch** ppdispParent);
 HRESULT
 ```
 
+<a id="89440"></a>
+<a id="descriptive-properties-and-methods"></a>
 ## Descriptive properties and methods
 
 This section provides information on the descriptive APIs.
 
+<a id="accdodefaultaction"></a>
 ### accDoDefaultAction
 
 Performs the object’s default action. Not all objects have a default action.
@@ -228,6 +255,7 @@ accDoDefaultAction (VARIANT varID);
 HRESULT
 ```
 
+<a id="get-accdefaultaction"></a>
 ### get\_accDefaultAction
 
 Retrieves a string that describes the object’s default action. Not all objects have a default action.
@@ -249,6 +277,7 @@ get_accDefaultAction(VARIANT varID, BSTR* pszDefaultAction);
 HRESULT
 ```
 
+<a id="get-accdescription"></a>
 ### get\_accDescription
 
 Retrieves a string that describes the visual appearance of the object. Not all objects have a description.
@@ -270,6 +299,7 @@ get_accDescription (VARIANT varID, BSTR* pszDescription);
 HRESULT
 ```
 
+<a id="get-accname"></a>
 ### get\_accName
 
 Retrieves the name of the object. All objects have a name.
@@ -291,6 +321,7 @@ get_accName (VARIANT varID, BSTR* pszName );
 HRESULT
 ```
 
+<a id="get-accrole"></a>
 ### get\_accRole
 
 Retrieves the role of the object. All objects have a role.
@@ -312,6 +343,7 @@ get_accRole (VARIANT varID, VARIANT* pvarRole );
 HRESULT
 ```
 
+<a id="get-accstate"></a>
 ### get\_accState
 
 Retrieves the state of the object. All objects have a state.
@@ -333,6 +365,7 @@ get_accState (VARIANT varID, VARIANT* pvarState );
 HRESULT
 ```
 
+<a id="get-accvalue"></a>
 ### get\_accValue
 
 Retrieves the value of the object. Not all objects have a value.
@@ -354,10 +387,13 @@ get_accValue (VARIANT varID, BSTR* pszValue );
 HRESULT
 ```
 
+<a id="22290"></a>
+<a id="selection-and-focus"></a>
 ## Selection and focus
 
 This section provides information on the selection and focus APIs.
 
+<a id="accselect"></a>
 ### accSelect
 
 Modifies the selection or moves the keyboard focus of the object. All objects that support selection or receive the keyboard focus support this method.
@@ -379,6 +415,7 @@ accSelect (long flagsSelect, VARIANT varID);
 HRESULT
 ```
 
+<a id="get-accfocus"></a>
 ### get\_accFocus
 
 Retrieves the object that has the keyboard focus. All objects that receive the keyboard focus support this property.
@@ -399,6 +436,7 @@ get_accFocus (VARIANT* pvarID);
 HRESULT
 ```
 
+<a id="get-accselection"></a>
 ### get\_accSelection
 
 Retrieves the selected children of the object. All objects that support selection support this property.
@@ -419,8 +457,11 @@ get_accSelection (VARIANT* pvarChildren);
 HRESULT
 ```
 
+<a id="57514"></a>
+<a id="spatial-mapping"></a>
 ## Spatial mapping
 
+<a id="acclocation"></a>
 ### accLocation
 
 Retrieves the object’s current screen location. All visual objects support this method.
@@ -443,6 +484,7 @@ accLocation (long* pxLeft, long* pyTop, long* pcxWidth, long* pcyHeight, VARIANT
 HRESULT
 ```
 
+<a id="acchittest"></a>
 ### accHitTest
 
 Retrieves the object at a specific screen location. All visual objects support this method.
@@ -464,6 +506,8 @@ accHitTest (long, long, VARIANT* pvarID);
 HRESULT
 ```
 
+<a id="88342"></a>
+<a id="iaccessible-object-types-for-pdf"></a>
 ## IAccessible object types for PDF
 
 This section describes the MSAA `IAccessible` object types that are defined to represent PDF documents and their elements. For each object, its methods are listed along with notes on how the implementation is specific to the object type.
@@ -474,22 +518,22 @@ This section describes the MSAA `IAccessible` object types that are defined to r
 
 The objects are:
 
-- [PDF Document](msaa-pdf.md#39396)
-- [PDF Page](msaa-pdf.md#89992)
-- [PDF Protected Document](msaa-pdf.md#72837)
-- [Empty PDF Document](msaa-pdf.md#10863)
-- [PDF Structure Element](msaa-pdf.md#77828)
-- [PDF Content Element](msaa-pdf.md#23328)
-- [PDF Comment](msaa-pdf.md#22500)
-- [PDF Link](msaa-pdf.md#55866)
-- [PDF Text Form Field](msaa-pdf.md#40546)
-- [PDF Button Form Field](msaa-pdf.md#91493)
-- [PDF CheckBox Form Field](msaa-pdf.md#13511)
-- [PDF RadioButton Form Field](msaa-pdf.md#19394)
-- [PDF ComboBox Form Field](msaa-pdf.md#25792)
-- [PDF List Box Form Field](msaa-pdf.md#20747)
-- [PDF Digital Signature Form Field](msaa-pdf.md#91488)
-- [PDF Caret](msaa-pdf.md#49405)
+- [PDF Document](./msaa-pdf.md#39396)
+- [PDF Page](./msaa-pdf.md#89992)
+- [PDF Protected Document](./msaa-pdf.md#72837)
+- [Empty PDF Document](./msaa-pdf.md#10863)
+- [PDF Structure Element](./msaa-pdf.md#77828)
+- [PDF Content Element](./msaa-pdf.md#23328)
+- [PDF Comment](./msaa-pdf.md#22500)
+- [PDF Link](./msaa-pdf.md#55866)
+- [PDF Text Form Field](./msaa-pdf.md#40546)
+- [PDF Button Form Field](./msaa-pdf.md#91493)
+- [PDF CheckBox Form Field](./msaa-pdf.md#13511)
+- [PDF RadioButton Form Field](./msaa-pdf.md#19394)
+- [PDF ComboBox Form Field](./msaa-pdf.md#25792)
+- [PDF List Box Form Field](./msaa-pdf.md#20747)
+- [PDF Digital Signature Form Field](./msaa-pdf.md#91488)
+- [PDF Caret](./msaa-pdf.md#49405)
 
 The following are some general notes:
 
@@ -497,6 +541,8 @@ The following are some general notes:
 - Form fields, links, and comments, as well as the document as a whole, can take keyboard focus. Subparts of the document (sections, paragraphs, and so on) cannot take focus.
 - A document’s contents may be only partially visible on the screen. The `get_accLocation` method for a given object returns the screen location of the visible part of the object only. You can use this method to determine which portions of the content are visible.
 
+<a id="39396"></a>
+<a id="pdf-document"></a>
 ### PDF Document
 
 Represents the contents of an entire PDF document. The subtree of `IAccessible` objects beneath the PDF Document object reflects the logical structure of the document.
@@ -521,6 +567,8 @@ Represents the contents of an entire PDF document. The subtree of `IAccessible` 
 | get\_accState | The state is `STATE_SYSTEM_READONLY`. |
 | get\_accValue | If the root of the structure tree has an `Alt` attribute, the value is the contents of the `Alt` attribute. |
 
+<a id="89992"></a>
+<a id="pdf-page"></a>
 ### PDF Page
 
 Represents the contents of one page of a PDF document. The subtree of `IAccessible` objects beneath the PDF Page node reflects the logical structure of the page.
@@ -545,6 +593,8 @@ Represents the contents of one page of a PDF document. The subtree of `IAccessib
 | get\_accState | The state is `STATE_SYSTEM_READONLY`. |
 | get\_accValue | If the root of the structure tree has an `Alt` attribute, the value is the contents of the `Alt` attribute |
 
+<a id="72837"></a>
+<a id="pdf-protected-document"></a>
 ### PDF Protected Document
 
 Represents a protected document. When the permissions associated with a document disable accessibility, the contents are not exported through the MSAA interface. The `IAccessible` object for such a document informs the client that the document is protected.
@@ -564,6 +614,8 @@ Represents a protected document. When the permissions associated with a document
 | get\_accState | The state is `STATE_SYSTEM_ALERT_MEDIUM + STATE_SYSTEM_UNAVAILABLE + STATE_SYSTEM_READONLY`. |
 | get\_accValue | The value is “This document’s security settings prevent access.” |
 
+<a id="10863"></a>
+<a id="empty-pdf-document"></a>
 ### Empty PDF Document
 
 Represents an empty or apparently empty document. A PDF file may have no contents to export through MSAA if, for instance, the file is a scanned image that has not been run through an optical character recognition (OCR) tool. The `IAccessible` object for empty documents and pages informs the client that there may be a problem, even if the document or page is genuinely empty.
@@ -583,6 +635,8 @@ Represents an empty or apparently empty document. A PDF file may have no content
 | get\_accState | The state is `STATE_SYSTEM_READONLY`. |
 | get\_accValue | The value is “This document appears to be empty. It may be a scanned image that needs OCR or it may have malformed structure.” |
 
+<a id="77828"></a>
+<a id="pdf-structure-element"></a>
 ### PDF Structure Element
 
 Represents a subtree of the logical structure tree for the document. It might correspond to a paragraph, a heading, a chapter, a span of text within a word, or a figure.
@@ -604,6 +658,8 @@ Represents a subtree of the logical structure tree for the document. It might co
 | get\_accState | The state is a logical OR of one or more of the following: * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_LINKED * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * `STATE_SYSTEM_READONLY` is always set. * If the element is part of a link (that is, if it has an ancestor of role `ROLE_SYSTEM_LINK`) then both `STATE_SYSTEM_LINKED` and `STATE_SYSTEM_FOCUSABLE` are set, and `STATE_SYSTEM_FOCUSED` can also be set. |
 | get\_accValue | If this node has an `Alt` or `ActualText` attribute, the value is the contents of the attribute. |
 
+<a id="23328"></a>
+<a id="pdf-content-element"></a>
 ### PDF Content Element
 
 Corresponds to a leaf node of the logical structure tree for the document. It corresponds to marking commands in the page content stream.
@@ -624,6 +680,8 @@ Corresponds to a leaf node of the logical structure tree for the document. It co
 | get\_accState | The state is a logical OR of one or more of the following: * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_LINKED * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * `STATE_SYSTEM_READONLY` is always set. * If the element is part of a link (that is, if it has an ancestor of role `ROLE_SYSTEM_LINK`) then both `STATE_SYSTEM_LINKED` and `STATE_SYSTEM_FOCUSABLE` are set, and `STATE_SYSTEM_FOCUSED` can also be set. |
 | get\_accValue | If this node has an `Alt` or `ActualText` attribute, the value is the content of that attribute. Otherwise, the value is all of the text contained in the marking commands for this node. |
 
+<a id="22500"></a>
+<a id="pdf-comment"></a>
 ### PDF Comment
 
 Corresponds to a comment, such as a text note or highlight comment, attached to the document.
@@ -650,6 +708,8 @@ Corresponds to a comment, such as a text note or highlight comment, attached to 
 | get\_accState | The state is a logical OR of one or more of the following: * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_LINKED * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_EXPANDED * STATE\_SYSTEM\_COLLAPSED * STATE\_SYSTEM\_FOCUSED * If a comment can be opened, `STATE_SYSTEM_LINKED` is set. * `STATE_SYSTEM_EXPANDED` and `STATE_SYSTEM_COLLAPSED` indicate whether the comment is open. |
 | get\_accValue | - If the comment is open, the value is the contents of the comment pop-up window. * If the comment is a type that does not open, the value is the contents of the comment itself. |
 
+<a id="55866"></a>
+<a id="pdf-link"></a>
 ### PDF Link
 
 Corresponds to a link in the document.
@@ -672,6 +732,8 @@ Corresponds to a link in the document.
 | get\_accState | The state is a logical OR of the following: * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_LINKED * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED |
 | get\_accValue | The value is a unique identifier for each link. |
 
+<a id="40546"></a>
+<a id="pdf-text-form-field"></a>
 ### PDF Text Form Field
 
 Corresponds to a text form field in the document.
@@ -692,6 +754,8 @@ Corresponds to a text form field in the document.
 | get\_accState | The state of the text field is a logical OR of one of more of: * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_SELECTABLE * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * STATE\_SYSTEM\_PROTECTED |
 | get\_accValue | The value is the text in the text field. |
 
+<a id="91493"></a>
+<a id="pdf-button-form-field"></a>
 ### PDF Button Form Field
 
 Corresponds to a button form field in the document.
@@ -711,6 +775,8 @@ Corresponds to a button form field in the document.
 | get\_accRole | The role is `ROLE_SYSTEM_PUSHBUTTON`. |
 | get\_accState | The state of the button is a logical OR of one or more of: * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED |
 
+<a id="13511"></a>
+<a id="pdf-checkbox-form-field"></a>
 ### PDF CheckBox Form Field
 
 Corresponds to a checkbox form field in the document.
@@ -730,6 +796,8 @@ Corresponds to a checkbox form field in the document.
 | get\_accRole | The role is `ROLE_SYSTEM_CHECKBUTTON`. |
 | get\_accState | The state of the check box is a logical OR of one or more of: * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * STATE\_SYSTEM\_CHECKED |
 
+<a id="19394"></a>
+<a id="pdf-radiobutton-form-field"></a>
 ### PDF RadioButton Form Field
 
 Corresponds to a radio button form field in the document.
@@ -749,6 +817,8 @@ Corresponds to a radio button form field in the document.
 | get\_accRole | The role is `ROLE_SYSTEM_RADIOBUTTON`. |
 | get\_accState | The state of the radio button is a logical OR of one or more of: * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * STATE\_SYSTEM\_CHECKED |
 
+<a id="25792"></a>
+<a id="pdf-combobox-form-field"></a>
 ### PDF ComboBox Form Field
 
 Corresponds to a combo box form field in the document. It can represent either the combo box itself, or a list item in a combo box.
@@ -771,6 +841,8 @@ Corresponds to a combo box form field in the document. It can represent either t
 | get\_accState | - For a combo box, the state is a logical OR of one or more these values: * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * STATE\_SYSTEM\_SELECTABLE * STATE\_SYSTEM\_SELECTED * For a list box item, the state is a logical OR of one or more these values:- STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_SELECTABLE * STATE\_SYSTEM\_SELECTED * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE |
 | get\_accValue | - For a combo box, the value is the text value of the currently selected list item. * For a list item, the value is the text of the list item. |
 
+<a id="20747"></a>
+<a id="pdf-list-box-form-field"></a>
 ### PDF List Box Form Field
 
 Corresponds to a list box form field in the document. It can represent either the list box itself or a list item in a list box.
@@ -793,6 +865,8 @@ Corresponds to a list box form field in the document. It can represent either th
 | get\_accSelection | - Returns `NULL`. |
 | get\_accValue | - For a list box, the value is the text value of the currently selected list item. * For a list item, the `Value` attribute is the text of the list item. |
 
+<a id="91488"></a>
+<a id="pdf-digital-signature-form-field"></a>
 ### PDF Digital Signature Form Field
 
 Corresponds to a digital signature form field in the document.
@@ -813,6 +887,8 @@ Corresponds to a digital signature form field in the document.
 | get\_accState | The `State` attribute of the digital signature is a logical OR of one of more of these values: * STATE\_SYSTEM\_INVISIBLE * STATE\_SYSTEM\_UNAVAILABLE * STATE\_SYSTEM\_READONLY * STATE\_SYSTEM\_FOCUSABLE * STATE\_SYSTEM\_FOCUSED * STATE\_SYSTEM\_CHECKED * STATE\_SYSTEM\_TRAVERSED * If `STATE_SYSTEM_CHECKED` is set, but not `STATE_SYSTEM_TRAVERSED`, the signature is unverified. * If `STATE_SYSTEM_TRAVERSED` is set, but not `STATE_SYSTEM_CHECKED`, the signature is invalid. * If both `STATE_SYSTEM_CHECKED` and `STATE_SYSTEM_TRAVERSED` are set, the signature is valid. |
 | get\_accValue | The `Value` attribute is the name and date of the signature, if that information is present. |
 
+<a id="49405"></a>
+<a id="pdf-caret"></a>
 ### PDF Caret
 
 Represents a caret (text cursor). If a document contains the system caret because focus is within an editable text field or an editable ComboBox field, clients can obtain an `IAccessible` object for the caret to determine where it is located.
