@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-catalogcatintro.md
+type: reference
+title: iac-api-catalogcatintro
+name: iac-api-catalogcatintro
+description: <a id="acrobat-catalog-plug-in"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-catalogcatintro.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, interapp]
+domain: content
+tokens: 603
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
+okf_version: '0.2'
+---
 <a id="acrobat-catalog-plug-in"></a>
 # Acrobat Catalog Plug-In
 

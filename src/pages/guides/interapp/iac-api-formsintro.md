@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-formsintro.md
+type: reference
+title: iac-api-formsintro
+name: iac-api-formsintro
+description: <a id="acrobat-forms-plug-in"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-formsintro.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, interapp]
+domain: content
+tokens: 11559
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
+okf_version: '0.2'
+---
 <a id="acrobat-forms-plug-in"></a>
 # Acrobat Forms Plug-In
 

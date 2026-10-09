@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-searchindexessentials.md
+type: reference
+title: js-dev-searchindexessentials
+name: js-dev-searchindexessentials
+description: <a id="search-and-index-essentials"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-searchindexessentials.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, jsdevguide]
+domain: content
+tokens: 2701
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
+okf_version: '0.2'
+---
 <a id="search-and-index-essentials"></a>
 # Search and Index Essentials
 

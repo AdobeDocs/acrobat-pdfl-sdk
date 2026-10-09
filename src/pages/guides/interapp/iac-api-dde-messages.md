@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-dde-messages.md
+type: reference
+title: iac-api-dde-messages
+name: iac-api-dde-messages
+description: <a id="dde-messages"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-dde-messages.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, interapp]
+domain: content
+tokens: 8072
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
+okf_version: '0.2'
+---
 <a id="dde-messages"></a>
 # DDE Messages
 

@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-insertext.md
+type: reference
+title: plugins-insertext
+name: plugins-insertext
+description: <a id="inserting-text-into-pdf-documents"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-insertext.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, plugin]
+domain: content
+tokens: 4699
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="inserting-text-into-pdf-documents"></a>
 <a id="id1"></a>
 # Inserting Text into PDF Documents

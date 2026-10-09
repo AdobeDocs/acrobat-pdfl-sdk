@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-syntax.md
+type: reference
+title: pdfmark-syntax
+name: pdfmark-syntax
+description: pdfmark Reference
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-syntax.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, pdfmark]
+domain: content
+tokens: 4622
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 pdfmark Reference
 
 <a id="introduction"></a>

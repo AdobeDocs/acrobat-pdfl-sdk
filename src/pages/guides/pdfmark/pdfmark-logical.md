@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-logical.md
+type: reference
+title: pdfmark-logical
+name: pdfmark-logical
+description: <a id="logical-structure"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-logical.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, pdfmark]
+domain: content
+tokens: 8220
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="logical-structure"></a>
 <a id="id1"></a>
 # Logical Structure

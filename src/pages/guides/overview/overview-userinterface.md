@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/overview-userinterface.md
+type: reference
+title: overview-userinterface
+name: overview-userinterface
+description: <a id="user-interface-modifications"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/overview-userinterface.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, overview]
+domain: content
+tokens: 999
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
+okf_version: '0.2'
+---
 <a id="user-interface-modifications"></a>
 # User Interface Modifications
 

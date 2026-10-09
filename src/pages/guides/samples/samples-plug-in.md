@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/samples/samples-plug-in.md
+type: reference
+title: samples-plug-in
+name: samples-plug-in
+description: <a id="plugin-samples"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/samples/samples-plug-in.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, samples]
+domain: content
+tokens: 5132
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="plugin-samples"></a>
 # Plugin Samples
 

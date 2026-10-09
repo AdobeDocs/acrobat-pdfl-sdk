@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/samples/samples-javascript.md
+type: reference
+title: samples-javascript
+name: samples-javascript
+description: <a id="javascript-samples"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/samples/samples-javascript.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, samples]
+domain: content
+tokens: 5064
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="javascript-samples"></a>
 # JavaScript Samples
 

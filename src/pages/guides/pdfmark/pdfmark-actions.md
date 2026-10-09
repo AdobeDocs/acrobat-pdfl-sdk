@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-actions.md
+type: reference
+title: pdfmark-actions
+name: pdfmark-actions
+description: <a id="actions-and-destinations"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-actions.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, pdfmark]
+domain: content
+tokens: 3345
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="actions-and-destinations"></a>
 <a id="id1"></a>
 # Actions and Destinations

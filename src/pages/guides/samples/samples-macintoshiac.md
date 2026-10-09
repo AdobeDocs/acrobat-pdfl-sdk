@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/samples/samples-macintoshiac.md
+type: reference
+title: samples-macintoshiac
+name: samples-macintoshiac
+description: <a id="mac-os-interapplication-communications"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/samples/samples-macintoshiac.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, samples]
+domain: content
+tokens: 407
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="mac-os-interapplication-communications"></a>
 # Mac OS - Interapplication Communications
 

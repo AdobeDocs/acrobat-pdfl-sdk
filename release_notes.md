@@ -1,21 +1,18 @@
 ---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/release_notes.md
 type: reference
-title: release_notes reference
+title: acrobat-pdfl-sdk change list
+name: acrobat-pdfl-sdk-change-list
 description: ''
 resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/release_notes.md
-tags:
-- format-conversion
-- dev.adobe.com-rst2md-project
-- acrobat-pdfl-sdk
+resource_root: C:/GIT
 author: brogers
-generated:
-  by: human:brogers
-  at: '2026-08-15T22:50:04-04:00'
-memory: null
-domain: null
-icon: none
+tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk]
+domain: content
+tokens: 302
+generated: {by: 'human:brogers', at: '2026-08-15T22:50:04-04:00'}
+okf_version: '0.2'
 ---
-
 # Release Notes
 
 ## Changes

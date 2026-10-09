@@ -1,24 +1,17 @@
 ---
-type: project
-title: Acrobat and PDFL SDK
-name: Acrobat and PDFL SDK
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/README.md
+type: project-readme
+title: acrobat-pdfl-sdk readme
+name: acrobat-pdfl-sdk-readme
 description: SDK files in RST format ready for conversion to MD.
 resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/README.md
-tags:
-- project
-- repo
-- RST
-- markdown
-- formats
-- format conversion
-- ADP
+resource_root: C:/GIT
 author: brogers
-generated:
-  by: human:brogers
-  at: '2026-08-21T23:28:30-04:00'
-memory: null
+tags: [project, repo, RST, markdown, formats, format conversion, ADP]
 domain: content
-icon: none
+tokens: 216
+generated: {by: 'human:brogers', at: '2026-08-21T23:28:30-04:00'}
+okf_version: '0.2'
 timestamp: 2026-08-16 02:50:04+00:00
 ---
 # Documentation

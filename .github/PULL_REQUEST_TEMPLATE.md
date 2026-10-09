@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/.github/PULL_REQUEST_TEMPLATE.md
+type: reference
+title: PULL_REQUEST_TEMPLATE
+name: PULL_REQUEST_TEMPLATE
+description: <!--- Provide a general summary of your changes in the Title above -->
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/.github/PULL_REQUEST_TEMPLATE.md
+resource_root: C:/GIT
+author: brogers
+tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, .github]
+domain: content
+tokens: 388
+generated: {by: 'human:brogers', at: '2026-03-24T11:47:22-04:00'}
+okf_version: '0.2'
+---
 <!--- Provide a general summary of your changes in the Title above -->
 
 ## Description

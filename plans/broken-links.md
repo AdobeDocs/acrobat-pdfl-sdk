@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/plans/broken-links.md
+type: reference
+title: broken-links
+name: broken-links
+description: 'Generated from `validate_internal_links()` against the current `output_md/source` build. Total: 20 issues, all `missing_target_file` — `missing_anchor` is now 0.'
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/plans/broken-links.md
+resource_root: C:/GIT
+author: brogers
+tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, plans]
+domain: content
+tokens: 744
+generated: {by: 'human:brogers', at: '2026-08-27T13:22:00-04:00'}
+okf_version: '0.2'
+---
 # Broken Internal Links — rst2md_converter output_md/source
 
 Generated from `validate_internal_links()` against the current `output_md/source` build. Total: 20 issues, all `missing_target_file` — `missing_anchor` is now 0.

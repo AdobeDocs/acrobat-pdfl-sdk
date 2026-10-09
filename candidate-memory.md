@@ -1,21 +1,19 @@
 ---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/candidate-memory.md
 type: memory
 title: Acrobat Pdfl Sdk
-description: ''
+name: candidate-memory
+description: 'Rule: In `rst2md_converter/input_rst/**.rst`, if a bare caption line sits directly above a grid table''s `+---+` top border with no blank line between them, docutils merges the caption and the entire table into one giant paragraph instead of a `table` node — no parse error/warning is emitted. The rendered markdown then shows the raw RST table syntax as prose (garbled, with smart-quote substitution turning `--` into en/em dashes), with no GFM separator row. Fixed in `1rst2md.py`''s `_fix_rst_grid_tables` by inserting a blank line whenever a grid-table delimiter line immediately follows a non-blank line.'
 resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/candidate-memory.md
-tags:
-- format-conversion
-- dev.adobe.com-rst2md-project
-- acrobat-pdfl-sdk
+resource_root: C:/GIT
 author: brogers
-generated:
-  by: human:brogers
-  at: '2026-08-15T22:50:04-04:00'
+tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk]
+domain: content
+tokens: 3963
+generated: {by: 'human:brogers', at: '2026-08-15T22:50:04-04:00'}
+okf_version: '0.2'
 memory: procedural
-domain: null
-icon: none
 ---
-
 ## 1. 2026-08-27 — Project: RST grid-table caption glued to border breaks docutils parsing
 
 Rule: In `rst2md_converter/input_rst/**.rst`, if a bare caption line sits directly above a grid table's `+---+` top border with no blank line between them, docutils merges the caption and the entire table into one giant paragraph instead of a `table` node — no parse error/warning is emitted. The rendered markdown then shows the raw RST table syntax as prose (garbled, with smart-quote substitution turning `--` into en/em dashes), with no GFM separator row. Fixed in `1rst2md.py`'s `_fix_rst_grid_tables` by inserting a blank line whenever a grid-table delimiter line immediately follows a non-blank line.

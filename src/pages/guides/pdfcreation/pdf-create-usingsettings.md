@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfcreation/pdf-create-usingsettings.md
+type: reference
+title: pdf-create-usingsettings
+name: pdf-create-usingsettings
+description: <a id="using-pdf-creation-settings"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfcreation/pdf-create-usingsettings.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, pdfcreation]
+domain: content
+tokens: 14764
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
+okf_version: '0.2'
+---
 <a id="using-pdf-creation-settings"></a>
 # Using PDF Creation Settings
 

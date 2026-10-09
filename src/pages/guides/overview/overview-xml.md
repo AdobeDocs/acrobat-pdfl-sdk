@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/overview-xml.md
+type: reference
+title: overview-xml
+name: overview-xml
+description: <a id="xml-and-the-acrobat-sdk"></a>
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/overview-xml.md
+resource_root: C:/GIT
+author: brogers
+tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, overview]
+domain: content
+tokens: 978
+generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
+okf_version: '0.2'
+---
 <a id="xml-and-the-acrobat-sdk"></a>
 # XML and the Acrobat SDK
 

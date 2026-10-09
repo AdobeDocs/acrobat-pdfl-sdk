@@ -1,3 +1,18 @@
+---
+id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/plans/rst2md-conversion-plan.md
+type: plan
+title: Plans
+name: rst2md-conversion-plan
+description: 'Project under change: `C:\GIT\format_conversion\dev.adobe.com_rst2md_project\rst2md_converter` (separate git repo).'
+resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/plans/rst2md-conversion-plan.md
+resource_root: C:/GIT
+author: brogers
+tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, plans]
+domain: content
+tokens: 1903
+generated: {by: 'human:brogers', at: '2026-08-27T09:29:53-04:00'}
+okf_version: '0.2'
+---
 # RST → Markdown Conversion Plan
 
 Project under change: `C:\GIT\format_conversion\dev.adobe.com_rst2md_project\rst2md_converter` (separate git repo).
