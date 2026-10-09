@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/snippet/snippet-snippetrunnercookbook.md
-type: reference
-title: snippet-snippetrunnercookbook
-name: snippet-snippetrunnercookbook
-description: <a id="38527"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/snippet/snippet-snippetrunnercookbook.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, snippet]
-domain: content
-tokens: 2714
-generated: {by: 'human:brogers', at: '2026-08-27T13:21:00-04:00'}
-okf_version: '0.2'
----
 <a id="38527"></a>
 <a id="installing-and-running-snippetrunner"></a>
 # Installing and Running SnippetRunner

@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsapiref/js-api-acrojschanges.md
-type: reference
-title: js-api-acrojschanges
-name: js-api-acrojschanges
-description: <a id="changes-across-versions"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsapiref/js-api-acrojschanges.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, jsapiref]
-domain: content
-tokens: 11642
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="changes-across-versions"></a>
 <a id="id1"></a>
 # Changes Across Versions

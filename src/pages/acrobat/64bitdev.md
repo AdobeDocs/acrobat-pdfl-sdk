@@ -1,20 +1,10 @@
 ---
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/acrobat/64bitdev.md
-type: reference
 title: Developing for 64-bit Windows
-name: 64bitdev
 description: 64-bit Windows development guidance for the Acrobat SDK.
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/acrobat/64bitdev.md
-resource_root: C:/GIT
-author: brogers
-tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, acrobat]
-domain: content
-tokens: 1468
-generated: {by: 'human:brogers', at: '2026-08-27T14:35:10-04:00'}
-okf_version: '0.2'
 contributors: Ben Rogers (Adobe Content Engineering)
 source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/master/docbuild/acrobatsdk/64bitdev.rst
 ---
+
 <a id="developing-for-64-bit-windows"></a>
 # Developing for 64-bit Windows
 

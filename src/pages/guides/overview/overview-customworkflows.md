@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/overview-customworkflows.md
-type: reference
-title: overview-customworkflows
-name: overview-customworkflows
-description: <a id="annotations-and-online-collaboration"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/overview-customworkflows.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, overview]
-domain: content
-tokens: 738
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="annotations-and-online-collaboration"></a>
 # Annotations and Online Collaboration
 

@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/tracker/tracker-examples.md
-type: reference
-title: tracker-examples
-name: tracker-examples
-description: <a id="customization-examples"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/tracker/tracker-examples.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, tracker]
-domain: content
-tokens: 4835
-generated: {by: 'human:brogers', at: '2026-08-27T13:21:00-04:00'}
-okf_version: '0.2'
----
 <a id="customization-examples"></a>
 # Customization Examples
 

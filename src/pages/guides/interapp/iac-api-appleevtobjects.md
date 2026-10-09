@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-appleevtobjects.md
-type: reference
-title: iac-api-appleevtobjects
-name: iac-api-appleevtobjects
-description: <a id="apple-event-objects-and-apple-events"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-appleevtobjects.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, interapp]
-domain: content
-tokens: 14707
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="apple-event-objects-and-apple-events"></a>
 # Apple Event Objects and Apple Events
 

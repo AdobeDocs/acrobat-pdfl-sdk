@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/config.md
-type: reference
-title: config
-name: config
-description: ''
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/config.md
-resource_root: C:/GIT
-author: brogers
-tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages]
-domain: content
-tokens: 301
-generated: {by: 'human:brogers', at: '2026-03-26T17:33:19-04:00'}
-okf_version: '0.2'
----
 - pathPrefix:
     - /acrobat-pdfl-sdk/
 

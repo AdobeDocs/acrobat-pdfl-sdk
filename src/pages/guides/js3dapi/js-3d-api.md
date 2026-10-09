@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/js3dapi/js-3d-api.md
-type: reference
-title: js-3d-api
-name: js-3d-api
-description: <a id="javascript-objects-for-acrobat-3d"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/js3dapi/js-3d-api.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, js3dapi]
-domain: content
-tokens: 26924
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="javascript-objects-for-acrobat-3d"></a>
 # JavaScript Objects for Acrobat 3D
 

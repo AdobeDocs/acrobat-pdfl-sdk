@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-security.md
-type: reference
-title: plugins-security
-name: plugins-security
-description: <a id="working-with-document-security"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-security.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, plugin]
-domain: content
-tokens: 3832
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="working-with-document-security"></a>
 <a id="id1"></a>
 # Working with Document Security

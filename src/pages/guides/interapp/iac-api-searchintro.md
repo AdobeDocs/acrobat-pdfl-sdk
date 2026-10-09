@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-searchintro.md
-type: reference
-title: iac-api-searchintro
-name: iac-api-searchintro
-description: <a id="acrobat-search-plug-in"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/interapp/iac-api-searchintro.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, interapp]
-domain: content
-tokens: 5763
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="acrobat-search-plug-in"></a>
 # Acrobat Search Plug-in
 

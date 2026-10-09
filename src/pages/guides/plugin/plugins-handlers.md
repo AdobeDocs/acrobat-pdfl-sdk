@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-handlers.md
-type: reference
-title: plugins-handlers
-name: plugins-handlers
-description: <a id="creating-handlers"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-handlers.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, plugin]
-domain: content
-tokens: 6579
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="creating-handlers"></a>
 <a id="id1"></a>
 # Creating Handlers

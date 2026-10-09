@@ -1,20 +1,10 @@
 ---
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/acrobat/releasenotes.md
-type: reference
 title: Acrobat SDK Release Notes
-name: releasenotes
 description: Release Notes for the Acrobat SDK.
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/acrobat/releasenotes.md
-resource_root: C:/GIT
-author: brogers
-tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, acrobat]
-domain: content
-tokens: 2482
-generated: {by: 'human:brogers', at: '2026-08-27T14:35:10-04:00'}
-okf_version: '0.2'
 contributors: Ben Rogers (Adobe Content Engineering)
 source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/master/docbuild/acrobatsdk/releasenotes.rst
 ---
+
 <a id="release-notes-all-versions"></a>
 # Release Notes (All Versions)
 

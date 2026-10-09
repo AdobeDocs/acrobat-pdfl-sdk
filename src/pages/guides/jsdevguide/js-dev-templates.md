@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-templates.md
-type: reference
-title: js-dev-templates
-name: js-dev-templates
-description: <a id="acrobat-templates"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-templates.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, jsdevguide]
-domain: content
-tokens: 2426
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="acrobat-templates"></a>
 # Acrobat Templates
 

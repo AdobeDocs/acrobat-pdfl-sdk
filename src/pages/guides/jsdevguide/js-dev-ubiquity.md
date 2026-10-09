@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-ubiquity.md
-type: reference
-title: js-dev-ubiquity
-name: js-dev-ubiquity
-description: <a id="rights-enabled-pdf-files"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-ubiquity.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, jsdevguide]
-domain: content
-tokens: 1229
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="rights-enabled-pdf-files"></a>
 # Rights-Enabled PDF Files
 

@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-examples.md
-type: reference
-title: pdfmark-examples
-name: pdfmark-examples
-description: <a id="examples"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-examples.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, pdfmark]
-domain: content
-tokens: 6964
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="examples"></a>
 <a id="id1"></a>
 # Examples

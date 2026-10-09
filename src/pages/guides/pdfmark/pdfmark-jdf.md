@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-jdf.md
-type: reference
-title: pdfmark-jdf
-name: pdfmark-jdf
-description: <a id="jdf-features"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/pdfmark/pdfmark-jdf.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, pdfmark]
-domain: content
-tokens: 1010
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="jdf-features"></a>
 <a id="id1"></a>
 # JDF Features

@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-pages.md
-type: reference
-title: plugins-pages
-name: plugins-pages
-description: <a id="working-with-page-views-and-contents"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-pages.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, plugin]
-domain: content
-tokens: 4222
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="working-with-page-views-and-contents"></a>
 <a id="id1"></a>
 # Working with Page Views and Contents

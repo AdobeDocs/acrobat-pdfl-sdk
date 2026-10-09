@@ -1,20 +1,10 @@
 ---
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/pdfl/releasenotes18.md
-type: reference
 title: PDFL SDK Release Notes v. 18.x
-name: releasenotes18
 description: PDFL SDK Release Notes v. 18.x for the PDFL SDK.
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/pdfl/releasenotes18.md
-resource_root: C:/GIT
-author: brogers
-tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, pdfl]
-domain: content
-tokens: 1602
-generated: {by: 'human:brogers', at: '2026-08-27T14:10:24-04:00'}
-okf_version: '0.2'
 contributors: Ben Rogers (Adobe Content Engineering)
 source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/master/docbuild/pdfl/releasenotes18.rst
 ---
+
 <a id="release-notes-v-18-x"></a>
 # Release Notes v. 18.x
 

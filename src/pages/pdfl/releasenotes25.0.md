@@ -1,20 +1,10 @@
 ---
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/pdfl/releasenotes25.0.md
-type: reference
 title: PDFL SDK Release Notes v. 25.0
-name: releasenotes25.0
 description: PDFL SDK Release Notes v. 25.0 for the PDFL SDK.
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/pdfl/releasenotes25.0.md
-resource_root: C:/GIT
-author: brogers
-tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, pdfl]
-domain: content
-tokens: 2555
-generated: {by: 'human:brogers', at: '2026-08-27T14:10:25-04:00'}
-okf_version: '0.2'
 contributors: Ben Rogers (Adobe Content Engineering)
 source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/master/docbuild/pdfl/releasenotes25.0.rst
 ---
+
 <a id="release-notes-v-25-0"></a>
 # Release Notes v. 25.0
 

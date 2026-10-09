@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-a3d-api.md
-type: reference
-title: plugins-a3d-api
-name: plugins-a3d-api
-description: <a id="parsing-and-creating-prc-files"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-a3d-api.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, plugin]
-domain: content
-tokens: 27454
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="parsing-and-creating-prc-files"></a>
 <a id="id1"></a>
 # Parsing and Creating PRC Files

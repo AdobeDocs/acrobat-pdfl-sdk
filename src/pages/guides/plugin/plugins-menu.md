@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-menu.md
-type: reference
-title: plugins-menu
-name: plugins-menu
-description: <a id="creating-menus-and-menu-commands"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/plugin/plugins-menu.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, plugin]
-domain: content
-tokens: 4459
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="creating-menus-and-menu-commands"></a>
 <a id="id1"></a>
 # Creating Menus and Menu Commands

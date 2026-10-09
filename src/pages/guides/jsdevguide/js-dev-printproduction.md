@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-printproduction.md
-type: reference
-title: js-dev-printproduction
-name: js-dev-printproduction
-description: <a id="print-production"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-printproduction.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, jsdevguide]
-domain: content
-tokens: 3100
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="print-production"></a>
 # Print Production
 

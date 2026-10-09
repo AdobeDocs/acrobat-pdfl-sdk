@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/apxdevfaq.md
-type: reference
-title: apxdevfaq
-name: apxdevfaq
-description: <a id="frequently-asked-questions"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/overview/apxdevfaq.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, overview]
-domain: content
-tokens: 3359
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="frequently-asked-questions"></a>
 # Frequently Asked Questions
 

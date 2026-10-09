@@ -1,20 +1,10 @@
 ---
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/acrobat/gettingstarted.md
-type: reference
 title: Acrobat SDK Getting Started
-name: gettingstarted
 description: Getting started with the Acrobat SDK.
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/acrobat/gettingstarted.md
-resource_root: C:/GIT
-author: brogers
-tags: [format-conversion, dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, acrobat]
-domain: content
-tokens: 784
-generated: {by: 'human:brogers', at: '2026-08-27T14:35:10-04:00'}
-okf_version: '0.2'
 contributors: Ben Rogers (Adobe Content Engineering)
 source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/master/docbuild/acrobatsdk/gettingstarted.rst
 ---
+
 <a id="getting-started"></a>
 # Getting Started
 

@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/accessibility/msaa-pdf.md
-type: reference
-title: msaa-pdf
-name: msaa-pdf
-description: <a id="reading-pdf-files-through-msaa"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/accessibility/msaa-pdf.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, accessibility]
-domain: content
-tokens: 11512
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:57-04:00'}
-okf_version: '0.2'
----
 <a id="reading-pdf-files-through-msaa"></a>
 # Reading PDF Files Through MSAA
 

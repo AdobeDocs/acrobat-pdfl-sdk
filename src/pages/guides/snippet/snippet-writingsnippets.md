@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/snippet/snippet-writingsnippets.md
-type: reference
-title: snippet-writingsnippets
-name: snippet-writingsnippets
-description: <a id="57730"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/snippet/snippet-writingsnippets.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, snippet]
-domain: content
-tokens: 1852
-generated: {by: 'human:brogers', at: '2026-08-27T13:21:00-04:00'}
-okf_version: '0.2'
----
 <a id="57730"></a>
 <a id="writing-snippets"></a>
 # Writing Snippets

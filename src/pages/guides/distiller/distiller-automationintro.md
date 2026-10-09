@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/distiller/distiller-automationintro.md
-type: reference
-title: distiller-automationintro
-name: distiller-automationintro
-description: <a id="acrobat-distiller-api-reference"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/distiller/distiller-automationintro.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, distiller]
-domain: content
-tokens: 1744
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:57-04:00'}
-okf_version: '0.2'
----
 <a id="acrobat-distiller-api-reference"></a>
 # Acrobat Distiller API Reference
 

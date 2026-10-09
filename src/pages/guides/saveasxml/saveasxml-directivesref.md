@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/saveasxml/saveasxml-directivesref.md
-type: reference
-title: saveasxml-directivesref
-name: saveasxml-directivesref
-description: <a id="mapping-table-elements-reference"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/saveasxml/saveasxml-directivesref.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, saveasxml]
-domain: content
-tokens: 9048
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:59-04:00'}
-okf_version: '0.2'
----
 <a id="mapping-table-elements-reference"></a>
 # Mapping Table Elements Reference
 

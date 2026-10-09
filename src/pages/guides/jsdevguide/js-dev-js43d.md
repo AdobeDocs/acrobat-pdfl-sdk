@@ -1,18 +1,3 @@
----
-id: C:/GIT/format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-js43d.md
-type: reference
-title: js-dev-js43d
-name: js-dev-js43d
-description: <a id="interfacing-with-3d-javascript"></a>
-resource: /format_conversion/dev.adobe.com_rst2md_project/acrobat-pdfl-sdk/src/pages/guides/jsdevguide/js-dev-js43d.md
-resource_root: C:/GIT
-author: brogers
-tags: [dev.adobe.com-rst2md-project, acrobat-pdfl-sdk, src, pages, guides, jsdevguide]
-domain: content
-tokens: 3345
-generated: {by: 'human:brogers', at: '2026-08-27T13:20:58-04:00'}
-okf_version: '0.2'
----
 <a id="interfacing-with-3d-javascript"></a>
 # Interfacing with 3D JavaScript
 
