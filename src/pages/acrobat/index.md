@@ -8,21 +8,12 @@ source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/maste
 <a id="acrobat-sdk-2021"></a>
 # Acrobat SDK 2021
 
-Welcome to the 2021 release of the  Acrobat SDK.  The downloads are new and the documentation is rapidly evolving.
-
 The Acrobat  SDK provides tools that help you develop software that interacts with Acrobat technology. The SDK contains header files, type libraries, simple utilities, sample code, and documentation. These tools provide several methods for developing software that integrates with Acrobat products, including JavaScript, plugins, and interapplication communication.
 
 This SDK release introduces support for Windows 64-bit. Details include:
 
 - You must upgrade 32-bit plugins to 64-bit for them to work with the 64-bit app.
 - The SDK provides 64-bit public headers to 3rd party plug-in developers so that they can successfully create or upgrade their plugins to 64-bit.
-
-<a id="master-search-and-toc"></a>
-## Master search and TOC
-
-> **Tip**
->
-> While each document below has a unique search and TOC, you can [search all the docs at once or use the master TOC](../guides/index.md)
 
 <a id="documentation"></a>
 ## Documentation

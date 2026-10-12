@@ -143,8 +143,8 @@ All code samples, tools, and other API dependent assets are updated for compatib
   - If any Acrobat-specific HFT is invoked in Reader Mode, it could throw a run-time exception. Plugins need to ensure Acrobat specific HFTs are not invoked while the application is running in Reader mode.
   - Existing plugins with different binaries for Acrobat and Reader must combine into a single binary. Product differentiation (Reader vs Acrobat) at install time is not possible.
 - Installation path
-  - 64-bit: /Program Files/Adobe/<app name>/Acrobat/plug\_ins
-  - 32-bit: /Program Files (x86)/Adobe/<app name>/Acrobat/plug\_ins
+  - 64-bit: `/Program Files/Adobe/<app name>/Acrobat/plug_ins`
+  - 32-bit: `/Program Files (x86)/Adobe/<app name>/Acrobat/plug_ins`
   - There is no “Acrobat Reader” specific path for 64-bit; there is for 32-bit.
   - The app name in the path is Acrobat.
 - Samples

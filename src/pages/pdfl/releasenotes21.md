@@ -10,10 +10,6 @@ source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/maste
 
 This guide describes how to install the Adobe PDF Library SDK, as well as general information regarding the release. In addition to this document, please read the [PDF Library documentation](https://www.adobe.com/go/pdflibrary) for important information on developing with and using the PDF Library.
 
-> **Tip**
->
-> This document is available in HTML and  [PDF](ReadMe-PDFL-SDK-XXI-21.0.0.pdf).
-
 <a id="version-21-0-february-29-2024"></a>
 ## Version 21.0, February 29, 2024
 

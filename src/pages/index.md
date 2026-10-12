@@ -21,12 +21,6 @@ Acrobat products provide several ways developers can interact with Acrobat produ
 * [Document Services SDK](https://developer.adobe.com/document-services/homepage/): Build engaging digital document experiences with Adobe’s cloud-based APIs, including the PDF Services API and PDF Embed API.
 * [Adobe Sign SDKs](https://developer.adobe.com/acrobat-sign/): The Adobe Sign developer tools include several SDKs (JS, JAVA, C++, etc.) and a mature REST API, developer guide and other resources. These tools enable building signing workflows and apps on the Adobe Sign platform.
 
-## Developer Guides
-
-Most of the developer documentation is shared across Acrobat and PDFL. For domain-specific variations, refer to the API references. Available docs include: 
-
-<insert bullet >
-
 ## Support and contacts
 
 Developers can purchase support via the Adobe Creative Cloud Exchange Developer Support program. Supported SDK development activities include those for which the product is designed, tested, and licensed. Acrobat Developer Support does not support use cases that do not involve the Acrobat core API.

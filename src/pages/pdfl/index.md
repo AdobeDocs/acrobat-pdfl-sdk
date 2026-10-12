@@ -74,13 +74,6 @@ Only the last two major SDK versions with interim updates are eligible for suppo
 
 To participate in the developer community, see [Adobe’s Acrobat SDK forum](https://community.adobe.com/t5/acrobat-sdk/bd-p/acrobat-sdk?page=1&sort=latest_replies&filter=all).
 
-<a id="master-search-and-toc"></a>
-## Master search and TOC
-
-> **Tip**
->
-> While each document below has a unique search and TOC, you can [search all the docs at once or use the master TOC](../guides/index.md)
-
 <a id="documentation"></a>
 ## Documentation
 

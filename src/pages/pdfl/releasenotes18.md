@@ -8,10 +8,6 @@ source: https://github.com/Adobe-Print/Documentation_PDFL_Acrobat_SDK/blob/maste
 <a id="release-notes-v-18-x"></a>
 # Release Notes v. 18.x
 
-> **Note**
->
-> For details about the latest release, refer to the [Version 21 Release Notes](https://opensource.adobe.com/dc-acrobat-sdk-docs/pdflsdk/releasenotes.html).
-
 <a id="february-23-2022"></a>
 ## 18.0.5, February 23, 2022
 
