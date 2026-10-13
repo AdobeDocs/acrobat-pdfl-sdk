@@ -120,7 +120,7 @@ To participate in the developer community, see [Adobe’s Acrobat SDK forum](htt
 
 Verify the latest versions from the organization’s home page:
 
-- Commpact font format: [https://docs.microsoft.com/en-us/typography/opentype/spec/cff](https://docs.microsoft.com/en-us/typography/opentype/spec/cff)
+- Compact font format: [https://docs.microsoft.com/en-us/typography/opentype/spec/cff](https://docs.microsoft.com/en-us/typography/opentype/spec/cff)
 - Open Prepress Interface (OPI): [https://www.pdfa.org/norm-refs/5660\_OPI\_2\_0.pdf](https://www.pdfa.org/norm-refs/5660_OPI_2_0.pdf)
 - XFA: [https://www.pdfa.org/norm-refs/XFA-3\_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf)
 - XFDF: [https://www.iso.org/standard/74272.html](https://www.iso.org/standard/74272.html)
