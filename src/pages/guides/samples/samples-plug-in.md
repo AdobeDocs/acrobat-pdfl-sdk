@@ -81,7 +81,7 @@ To manage certificates by SampleRegistrar:
 
 - To list registered PFXs: ‘SampleRegistrar.exe -l’
 - To register PFX: ‘SampleRegistrar.exe -r mycert.pfx password’
-- To un-register PFX: ‘SampleRegistrar.exe -u <hex-encoded-sha1-cert-digest>’
+- To un-register PFX: `SampleRegistrar.exe -u <hex-encoded-sha1-cert-digest>`
 
 There are some easy tests you can run to check the CSP is working with Acrobat:
 
@@ -226,8 +226,8 @@ This sample demonstrates how a plugin can work with the app in sandbox mode (pro
 **Usage**
 
 1. Configure the sample to enable it for the app and build the plugin.
-2. Copy the SamplePI.api to <Installed\_Path>plug\_insSamplePI.api.
-3. Copy the SamplePIBroker.exe process to <Install\_Path>plug\_inspi\_brokersSamplePIBroker.exe.
+2. Copy the SamplePI.api to `<Installed_Path>plug_insSamplePI.api`.
+3. Copy the SamplePIBroker.exe process to `<Install_Path>plug_inspi_brokersSamplePIBroker.exe`.
 4. Start the app in Protected Mode and play with SamplePI.api from the Acrobat SDK->SamplePI menu.
 
 > **Note**

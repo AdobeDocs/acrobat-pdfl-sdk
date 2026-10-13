@@ -119,9 +119,9 @@ The `Emit-string` directive causes its content to be translated to the output en
 
 Here, as in any mapping table directive, the following code is used to represent special characters:
 
-- `&lt;` represents the less-than (<) character.
-- `&gt;` represents the greater-than (>) character.
-- `&amp;` represents the ampersand (&) character.
+- `&lt;` represents the less-than (`<`) character.
+- `&gt;` represents the greater-than (`>`) character.
+- `&amp;` represents the ampersand (`&`) character.
 
 <a id="walk-structure"></a>
 ### Walk-structure

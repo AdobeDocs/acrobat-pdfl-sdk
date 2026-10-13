@@ -102,7 +102,7 @@ This is the dedicated IPC channel across which the plug-in and its plug-in broke
    - `SandboxPISDKServerMacros.h`
 3. Add the `SandboxPIServerMain.cpp` to the project
 4. Implement `<plugin>IPCServer.cpp` to add the server/broker side of the Plugin broker Extensibility functionality. See [Implement CrossCalls (make calls from plug-in to plug-in’s broker process)](./sandboxbrokerext.md#26339).
-5. Add `ipc_lib` project to your <Plugin>broker project’s dependency list and also link to it.
+5. Add `ipc_lib` project to your `<Plugin>broker` project’s dependency list and also link to it.
 6. Link to the `sandbox_pisdk_server.lib` provided along with SandboxPISDK
 
 Refer the sample plugin/pluginbroker source code for more details.
@@ -132,7 +132,7 @@ Let’s take an example where plugin needs to send `WM_COPYDATA` message to a wi
 ### Changes required in the plugin (client)
 
 <a id="file-plugin-crosscalls-h"></a>
-#### File <plugin>CrossCalls.h
+#### File `<plugin>CrossCalls.h`
 
 Create a unique id for new call and add it in between `DECLARE_CROSS_CALL_START` and `DECLARE_CROSS_CALL_END:`
 
@@ -198,7 +198,7 @@ OUTPUT_PARAM_BUFFER - ipc::ByteArray
 ```
 
 <a id="file-plugin-ipcclient-cpp"></a>
-#### File <plugin>IPCClient.cpp
+#### File `<plugin>IPCClient.cpp`
 
 In this file, the entire client side of the CrossCall needs to be defined. Macro `DEFINE_CLIENT_CROSS_CALL(<UniqueId>, <numOfInputParams>, <numOfOutputParams>)` does all the work of generating the requisite class (client side).
 
@@ -218,7 +218,7 @@ MAKE_CROSS_CALL_WITH_RETURN_VAL(SbxPISendMessage, return_value)(static_cast<LPVO
 ### Changes required in the plugin’s broker (server)
 
 <a id="file-plugin-ipcserver-cpp"></a>
-#### File <plugin>IPCServer.cpp
+#### File `<plugin>IPCServer.cpp`
 
 In this file, the entire server side of the CrossCall needs to be defined. Macro `DEFINE_SERVER_CROSS_CALL_START(<UniqueId>, <numOfInputParams>, <numOfOutputParams>)` does all the work of generating the requisite server side class:
 

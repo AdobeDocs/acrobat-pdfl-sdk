@@ -315,7 +315,7 @@ Field.SetForegroundColor "CMYK", 0.25, 0.25, 0.25, 0.1
 <a id="setjavascriptaction"></a>
 ### SetJavaScriptAction
 
-Sets the action of the field to be of type `JavaScript`. When using `SetJavaScriptAction` within Visual Basic, you can use Chr(13) to add a <CR>, and Chr(9) for tabs, so that the function is well formatted.
+Sets the action of the field to be of type `JavaScript`. When using `SetJavaScriptAction` within Visual Basic, you can use Chr(13) to add a `<CR>`, and Chr(9) for tabs, so that the function is well formatted.
 
 **Syntax**
 
@@ -1060,7 +1060,7 @@ Set Field = Fields.Add("payment",_ "radiobutton", 0, 100, 600, 130, 570)
 <a id="adddocjavascript"></a>
 ### AddDocJavascript
 
-Adds a document-level JavaScript function to the PDF file. When using `AddDocJavascript`, within Visual Basic, you can use `Chr(13)` to add a <CR>, and `Chr(9)` for tabs, so that the function is well formatted.
+Adds a document-level JavaScript function to the PDF file. When using `AddDocJavascript`, within Visual Basic, you can use `Chr(13)` to add a `<CR>`, and `Chr(9)` for tabs, so that the function is well formatted.
 
 **Syntax**
 

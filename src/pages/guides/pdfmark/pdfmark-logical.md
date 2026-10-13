@@ -155,7 +155,7 @@ Bookmark dictionary / bookmark tree root
 | Key | Type | Semantics |
 |-----|------|-----------|
 | Open | Boolean | Optional. If `true`, the bookmark is open, that is, its children are visible. If `false`, the bookmark is closed. If this key is absent, the bookmark is closed. |
-| Title | string | Optional. The bookmark title. The encoding and character set used is either PDFDocEncoding (as described in the [PDF Reference](https://www.adobe.com/go/pdfreference)) or Unicode. If Unicode, the string must begin with <FEFF>. For example, the Unicode string for (ABC) is <FEFF004100420043>. `Title` has a maximum length of 255 PDFDocEncoding characters or 126 Unicode values, although a practical limit of 32 characters is advised so that it |
+| Title | string | Optional. The bookmark title. The encoding and character set used is either PDFDocEncoding (as described in the [PDF Reference](https://www.adobe.com/go/pdfreference)) or Unicode. If Unicode, the string must begin with `<FEFF>`. For example, the Unicode string for (ABC) is `<FEFF004100420043>`. `Title` has a maximum length of 255 PDFDocEncoding characters or 126 Unicode values, although a practical limit of 32 characters is advised so that it |
 
 If the `Title` key is absent, the title is the title of the element or its subtype.
 

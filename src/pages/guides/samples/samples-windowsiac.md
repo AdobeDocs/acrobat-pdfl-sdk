@@ -27,7 +27,7 @@ IAC/win/HTMLSamples/AcroPDFInHTML
 
 **Description**
 
-A simple example of using the PDF control embedded in an HTML page. The <OBJECT> tag with a unique classid for AcroPDF ActiveX control is used to embed it. That is, classid=”clsidCA8A9780-280D-11CF-A24D-444553540000”.
+A simple example of using the PDF control embedded in an HTML page. The `<OBJECT>` tag with a unique classid for AcroPDF ActiveX control is used to embed it. That is, classid=”clsidCA8A9780-280D-11CF-A24D-444553540000”.
 
 This sample also demonstrates how to use the automation API on the control from client-side JavaScript.
 

@@ -406,7 +406,7 @@ This procedure adds a reference to the Acrobat type library so that you can acce
 2. Install Acrobat and Visual Basic.
 3. Create a new Visual Basic project from the Windows Application template. This provides a blank form and project workspace.
 4. Select **Project** > **Add Reference** and click the **COM** tab.
-5. From the list of available references, select **Adobe Acrobat <version> Type Library** and click **OK**.
+5. From the list of available references, select **Adobe Acrobat &lt;version&gt; Type Library** and click **OK**.
 
 <a id="creating-a-simple-application"></a>
 ### Creating a simple application

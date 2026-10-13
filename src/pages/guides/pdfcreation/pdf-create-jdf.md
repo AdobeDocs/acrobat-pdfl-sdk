@@ -47,7 +47,7 @@ Mapping from setpagedevice keys to JDF entries
 | Key Name | Entry in /JDF / ResourcePool |
 |----------|------------------------------|
 | Collate | DigitalPrintingParams /@ Collate |
-| DeviceRenderingInfo  <<ValuesPerColorComponent>> | RenderingParams /@ ColorantDepth |
+| `DeviceRenderingInfo  <<ValuesPerColorComponent>>` | RenderingParams /@ ColorantDepth |
 | Duplex | LayoutPreparationParams /@ Sides |
 | HWResolution | RenderingParams / ObjectResolution /@ Resolution |
 | Jog | Component / Disjointing /@ OffsetAmount |
@@ -65,11 +65,11 @@ Mapping from setpagedevice keys to JDF entries
 | SeparationOrder | ColorantControl /@ ColorantOrder |
 | Separations | ColorantControl /@ ForceSeparations |
 | Trapping | TrappingDetails /@ Trapping |
-| TrappingDetails <<Type>> | TrappingDetails /@ TrappingType |
-| TrappingDetails  <<ColorantDetails  <<ColorantName>> >> | ColorantControl / ColorPool /@ ColorName |
-| TrappingDetails  <<ColorantDetails  <<ColorantType>> >> | ColorantControl / ColorPool / Color /@ ColorType |
-| TrappingDetails  <<ColorantDetails  <<NeutralDensity>> >> | ColorantControl / ColorPool / Color /@ NeutralDensity |
-| TrappingDetails  <<TrappingOrder>> | TrappingDetails /@ TrappingOrder |
+| `TrappingDetails <<Type>>` | TrappingDetails /@ TrappingType |
+| `TrappingDetails  <<ColorantDetails  <<ColorantName>> >>` | ColorantControl / ColorPool /@ ColorName |
+| `TrappingDetails  <<ColorantDetails  <<ColorantType>> >>` | ColorantControl / ColorPool / Color /@ ColorType |
+| `TrappingDetails  <<ColorantDetails  <<NeutralDensity>> >>` | ColorantControl / ColorPool / Color /@ NeutralDensity |
+| `TrappingDetails  <<TrappingOrder>>` | TrappingDetails /@ TrappingOrder |
 | Tumble | LayoutPreparation /@ Sides |
 
 Mapping from settrapparms keys to JDF TrappingDetails entries
@@ -79,9 +79,9 @@ Mapping from settrapparms keys to JDF TrappingDetails entries
 | BlackColorLimit | @ BlackColorLimit |
 | BlackDensityLimit | @ BlackDensityLimit |
 | BlackWidth | @ BlackWidth |
-| ColorantZoneDetails  <<StepLimit>> | @ ColorantZoneDetails /@ StepLimit |
-| ColorantZoneDetails  <<TrapColorScaling>> | @ ColorantZoneDetails /@ TrapColorScaling |
-| ColorantZoneDetails  <<TrapPlacement>> | @ ColorantZoneDetails /@ ADBE 1:TrapPlacement |
+| `ColorantZoneDetails  <<StepLimit>>` | @ ColorantZoneDetails /@ StepLimit |
+| `ColorantZoneDetails  <<TrapColorScaling>>` | @ ColorantZoneDetails /@ TrapColorScaling |
+| `ColorantZoneDetails  <<TrapPlacement>>` | @ ColorantZoneDetails /@ ADBE 1:TrapPlacement |
 | Enabled | @ Enabled |
 | ImageInternalTrapping | @ ImageInternalTrapping |
 | ImageMaskTrapping | @ ImageMaskTrapping |
@@ -231,13 +231,13 @@ into JDF ImageCompression subelement
 |-----------|----------------------------------------------------------------------------------|
 | `AntiAliasColorImages`, `AntiAliasGrayImages`, or `AntiAliasMonoImages` | @ AntiAliasImages |
 | `AutoFilterColorImages` or `AutoFilterGrayImages`  (Not relevant to monochrome images.) | @ AutoFilterImages |
-| AutoFilterColorImages AutoFilterGrayImages /ColorACSImageDict  <</QFactor>> /GrayACSImageDict <</QFactor>>  /ColorImageDict <</QFactor>> /GrayImageDict  <</QFactor>> /MonoImageDict <</QFactor>>  The table Conversion from Parameters into the JDF DCTQuality attribute describes how the auto filter parameter influences selection of a /QFactor value.  The compression quality dictionaries described above may contain other factors that influence compression; however, they are not represented in JDF attributes. | @ DCTQuality  Distiller calculates `DCTQuality` by dividing the selected QFactor by 100. For example: |
+| `AutoFilterColorImages AutoFilterGrayImages /ColorACSImageDict  <</QFactor>> /GrayACSImageDict <</QFactor>>  /ColorImageDict <</QFactor>> /GrayImageDict  <</QFactor>> /MonoImageDict <</QFactor>>`  The table Conversion from Parameters into the JDF DCTQuality attribute describes how the auto filter parameter influences selection of a /QFactor value.  The compression quality dictionaries described above may contain other factors that influence compression; however, they are not represented in JDF attributes. | @ DCTQuality  Distiller calculates `DCTQuality` by dividing the selected QFactor by 100. For example: |
 | `ColorImageDepth`, `GrayImageDepth`, or `/MonoImageDepth` | @ ImageDepth |
 | `ColorImageDownsampleThreshold`, `GrayImageDownsampleThreshold`, or `MonoImageDownsampleThreshold` | @ ImageDownsampleThreshold |
 | `ColorImageDownsampleType`, `GrayImageDownsampleType`, or `MonoImageDownsampleType` | @ ImageDownsampleType |
 | `ColorImageFilter`, `GrayImageFilter`, or `MonoImageFilter` | `ImageFilter` or `ADBE:ImageFilter`  The latter being used to represent the value `JPXEncode`, `LZWEncode`, or `RunLengthEncode`. |
 | `ColorImageResolution`, `GrayImageResolution`, or `MonoImageResolution` | @ ImageResolution |
-| JPEG2000ColorACSImageDict <</Quality>>  JPEG2000GrayACSImageDict <</Quality>>  JPEG2000ColorImageDict <</Quality>>  JPEG2000GrayImageDict <</Quality>> | @ADBE2:JPXQuality |
+| `JPEG2000ColorACSImageDict <</Quality>>  JPEG2000GrayACSImageDict <</Quality>>  JPEG2000ColorImageDict <</Quality>>  JPEG2000GrayImageDict <</Quality>>` | @ADBE2:JPXQuality |
 | ConvertImagesToIndexed | @ ConvertImagesToIndexed  (Represented only in an `ImageCompressionParams` element with `ImageType = "Color"`.) |
 | `DownsampleColorImages`, `DownsampleGrayImages`, or `DownsampleMonoImages` | @ DownsampleImages |
 | `EncodeColorImages`, `EncodeGrayImages`, or `EncodeMonoImages` | @ EncodeImages |
@@ -250,11 +250,11 @@ Conversion from Parameters into the JDF DCTQuality attribute
 
 | Condition | Distiller compression dictionary key-word pair used to derive the value of *ImageCompression /@ DCTQuality* |
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| If AutoFilterColorImages is `true` | /ColorACSImageDict <</QFactor>> |
-| If AutoFilterColorImages is `false` | /ColorImageDict <</QFactor>> |
-| If AutoFilterGrayImages is `true` | /GrayACSImageDict <</QFactor>> |
-| If AutoFilterGrayImages is `false` | /GrayImageDict <</QFactor>> |
-| If AutoFilterGrayImages value is irrelevant | /MonoImageDict <</QFactor>> |
+| If AutoFilterColorImages is `true` | `/ColorACSImageDict <</QFactor>>` |
+| If AutoFilterColorImages is `false` | `/ColorImageDict <</QFactor>>` |
+| If AutoFilterGrayImages is `true` | `/GrayACSImageDict <</QFactor>>` |
+| If AutoFilterGrayImages is `false` | `/GrayImageDict <</QFactor>>` |
+| If AutoFilterGrayImages value is irrelevant | `/MonoImageDict <</QFactor>>` |
 
 <a id="page-compression"></a>
 ### Page compression

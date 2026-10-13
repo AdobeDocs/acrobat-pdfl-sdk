@@ -204,7 +204,7 @@ The name of a specific marker in the media.
 |---------------|------------|----------|---------|------|--------|
 | 6.0 | No | No | All | Number | R/W |
 
-A time in seconds, or `Infinity`. If the `marker` property is also present, this time is relative to the specified marker and is a nonnegative value, but not `Infinity`. Otherwise, the time is relative to the beginning of media and must not be negative. Note that the offset { time: 0 } represents the beginning of media.
+A time in seconds, or `Infinity`. If the `marker` property is also present, this time is relative to the specified marker and is a nonnegative value, but not `Infinity`. Otherwise, the time is relative to the beginning of media and must not be negative. Note that the offset `{ time: 0 }` represents the beginning of media.
 
 Example: These are examples of absolute and relative offsets.
 
