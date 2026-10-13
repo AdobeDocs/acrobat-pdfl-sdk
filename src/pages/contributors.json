@@ -1,7 +1,7 @@
 {
-  "total": 11,
+  "total": 118,
   "offset": 0,
-  "limit": 11,
+  "limit": 118,
   "data": [
     {
       "page": "/",
@@ -9,21 +9,42 @@
         "https://avatars.githubusercontent.com/u/50121312?v=4",
         "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "3/27/2026"
+      "lastUpdated": "10/12/2026"
     },
     {
       "page": "/acrobat/",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/26/2026"
+      "lastUpdated": "10/12/2026"
+    },
+    {
+      "page": "/acrobat/64bitdev",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/acrobat/choose",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/acrobat/gettingstarted",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
     },
     {
       "page": "/acrobat/releasenotes",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/28/2026"
+      "lastUpdated": "10/12/2026"
     },
     {
       "page": "/config",
@@ -31,7 +52,7 @@
         "https://avatars.githubusercontent.com/u/50121312?v=4",
         "https://avatars.githubusercontent.com/u/41382203?v=4"
       ],
-      "lastUpdated": "3/26/2026"
+      "lastUpdated": "10/12/2026"
     },
     {
       "page": "/guides/",
@@ -46,42 +67,770 @@
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/28/2026"
+      "lastUpdated": "8/27/2026"
     },
     {
       "page": "/guides/accessibility/access-dom",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/28/2026"
+      "lastUpdated": "10/9/2026"
     },
     {
       "page": "/guides/accessibility/msaa-pdf",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/28/2026"
+      "lastUpdated": "10/9/2026"
     },
     {
       "page": "/guides/batch/",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/28/2026"
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/distiller/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/distiller/distiller-automationintro",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/distiller/distiller-mac",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/distiller/distiller-winintro",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-appleevtobjects",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-catalogcatintro",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-coordinatesystems",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-dde-messages",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-formsintro",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-ole-objects",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-api-searchintro",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-devapp-appleevents",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-devapp-dde-support",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/interapp/iac-devapp-ole-support",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/js3dapi/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/js3dapi/js-3d-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsapiref/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/jsapiref/doc",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsapiref/js-api-acrojs",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsapiref/js-api-acrojschanges",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsapiref/media",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsapiref/preflight",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-acrobatforms",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-contexts",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-databases",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-digitalmedia",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-js43d",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-modifyuserinterface",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-pdfcreation",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-printproduction",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-rma",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-searchindexessentials",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-security",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-soapws",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-templates",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-tools",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/js-dev-ubiquity",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/jsdevguide/reader-javascript",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/overview/apxdevfaq",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-customworkflows",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-editing",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-forms",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-metadata",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-pdfcreation",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-searching",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-userinterface",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/overview-xml",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/overview/sandboxbrokerext",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfcreation/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/pdfcreation/pdf-create-commonsettings",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfcreation/pdf-create-jdf",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfcreation/pdf-create-newnamespaces",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfcreation/pdf-create-usingsettings",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-actions",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-basic",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-examples",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-jdf",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-logical",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-oc-interface",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/pdfmark/pdfmark-syntax",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-3d-samples",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-a3d-api",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-annotations",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-bookmark",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-cos",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-creatingsimpleplug",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-documents",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-exceptions",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-extendedapi",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-handlers",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-hft",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-insertext",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-menu",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-notification",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-pages",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-pimech",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-readerplug",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-security",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-toolbutton",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-unicode",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/plugins-words",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/plugin/reader-plugins",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/samples/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/samples/samples-javascript",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/samples/samples-macintoshiac",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/samples/samples-plug-in",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/samples/samples-tools",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/samples/samples-windowsiac",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/saveasxml/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/saveasxml/saveasxml-directivesref",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/snippet/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/snippet/snippet-snippetrunnercookbook",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/snippet/snippet-writingsnippets",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/tracker/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "8/27/2026"
+    },
+    {
+      "page": "/guides/tracker/tracker-examples",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
+    },
+    {
+      "page": "/guides/tracker/tracker-inboxapi",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/9/2026"
     },
     {
       "page": "/pdfl/",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/26/2026"
+      "lastUpdated": "10/12/2026"
     },
     {
-      "page": "/pdfl/releasenotes",
+      "page": "/pdfl/releasenotes18",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "3/26/2026"
+      "lastUpdated": "10/12/2026"
+    },
+    {
+      "page": "/pdfl/releasenotes21",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/12/2026"
+    },
+    {
+      "page": "/pdfl/releasenotes21-0-0-7",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/12/2026"
+    },
+    {
+      "page": "/pdfl/releasenotes25-0",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/12/2026"
     }
   ],
   ":type": "sheet"
