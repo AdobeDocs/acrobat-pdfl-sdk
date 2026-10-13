@@ -217,14 +217,14 @@
       "lastUpdated": "10/13/2026"
     },
     {
-      "page": "/guides/jsapiref/annotation_apis",
+      "page": "/guides/jsapiref/annotation-apis",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
       "lastUpdated": "10/13/2026"
     },
     {
-      "page": "/guides/jsapiref/annotation-apis",
+      "page": "/guides/jsapiref/app-apis",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
@@ -235,7 +235,14 @@
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "10/9/2026"
+      "lastUpdated": "10/13/2026"
+    },
+    {
+      "page": "/guides/jsapiref/event-apis",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/13/2026"
     },
     {
       "page": "/guides/jsapiref/js-api-acrojs",
@@ -249,7 +256,7 @@
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
-      "lastUpdated": "10/9/2026"
+      "lastUpdated": "10/13/2026"
     },
     {
       "page": "/guides/jsapiref/media",
@@ -264,13 +271,6 @@
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
       "lastUpdated": "10/9/2026"
-    },
-    {
-      "page": "/guides/jsapiref/security_signature_apis",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/50121312?v=4"
-      ],
-      "lastUpdated": "10/13/2026"
     },
     {
       "page": "/guides/jsapiref/security-signature-apis",
