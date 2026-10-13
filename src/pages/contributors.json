@@ -1,7 +1,7 @@
 {
-  "total": 124,
+  "total": 122,
   "offset": 0,
-  "limit": 124,
+  "limit": 122,
   "data": [
     {
       "page": "/",
@@ -217,13 +217,6 @@
       "lastUpdated": "10/13/2026"
     },
     {
-      "page": "/guides/jsapiref/annotation_apis",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/50121312?v=4"
-      ],
-      "lastUpdated": "10/13/2026"
-    },
-    {
       "page": "/guides/jsapiref/annotation-apis",
       "avatars": [
         "https://avatars.githubusercontent.com/u/50121312?v=4"
@@ -278,13 +271,6 @@
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
       "lastUpdated": "10/9/2026"
-    },
-    {
-      "page": "/guides/jsapiref/security_signature_apis",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/50121312?v=4"
-      ],
-      "lastUpdated": "10/13/2026"
     },
     {
       "page": "/guides/jsapiref/security-signature-apis",
