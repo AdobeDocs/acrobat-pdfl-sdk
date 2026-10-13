@@ -284,7 +284,7 @@ In versions of Acrobat earlier than 7.0, the JavaScript files `AForm.js`, `ADBC.
 
 Files in the User JavaScript folder are not included in the precompiled bytecode file.
 
-It is recommended that users put their own `.js` files in the user JavaScript folder, the same place where `glob.js` resides. JavaScript code that sets up menu items ([addMenuItem](./js-api-acrojs.md#52015)) should be put in `config.js` in the User JavaScript folder. The location of this folder can be found programmatically by executing `app.getPath("user","javascript")` from the console.
+It is recommended that users put their own `.js` files in the user JavaScript folder, the same place where `glob.js` resides. JavaScript code that sets up menu items ([addMenuItem](./app-apis.md#52015)) should be put in `config.js` in the User JavaScript folder. The location of this folder can be found programmatically by executing `app.getPath("user","javascript")` from the console.
 
 Adobe Reader now has a console window. Under Edit > Preferences > JavaScript select Show Console on Errors and Messages. In addition to errors and exceptions, the console can also be opened programmatically with `console.show()`. See the `console` object for a few other details.
 
@@ -425,7 +425,7 @@ The following table lists the objects, properties and methods of the Multimedia 
 |  |  |
 |---|---|
 | `app` object | properties: * `media` * `monitors` |
-| [app.media](./js-api-acrojs.md#19976) object | properties: * `align` * `canResize` * `closeReason` * `defaultVisible` * `ifOffScreen` * `layout` * `monitorType` * `openCode` * `over` * `pageEventNames` * `raiseCode` * `raiseSystem` * `renditionType` * `status` * `trace` * `version` * `windowType`  methods: * `addStockEvents` * `alertFileNotFound` * `alertSelectFailed` * `argsDWIM` * `canPlayOrAlert` * `computeFloatWinRect` * `constrainRectToScreen` * `createPlayer` * `getAltTextData` * `getAltTextSettings` * `getAnnotStockEvents` * `getAnnotTraceEvents` * `getPlayers` * `getPlayerStockEvents` * `getPlayerTraceEvents` * `getRenditionSettings` * `getURLData` * `getURLSettings` * `getWindowBorderSize` * `openPlayer` * `removeStockEvents` * `startPlayer` |
+| [app.media](./app-apis.md#19976) object | properties: * `align` * `canResize` * `closeReason` * `defaultVisible` * `ifOffScreen` * `layout` * `monitorType` * `openCode` * `over` * `pageEventNames` * `raiseCode` * `raiseSystem` * `renditionType` * `status` * `trace` * `version` * `windowType`  methods: * `addStockEvents` * `alertFileNotFound` * `alertSelectFailed` * `argsDWIM` * `canPlayOrAlert` * `computeFloatWinRect` * `constrainRectToScreen` * `createPlayer` * `getAltTextData` * `getAltTextSettings` * `getAnnotStockEvents` * `getAnnotTraceEvents` * `getPlayers` * `getPlayerStockEvents` * `getPlayerTraceEvents` * `getRenditionSettings` * `getURLData` * `getURLSettings` * `getWindowBorderSize` * `openPlayer` * `removeStockEvents` * `startPlayer` |
 | `Doc` object | properties: * `innerAppWindowRect` * `innerDocWindowRect` * `media` * `outerAppWindowRect` * `outerDocWindowRect` * `pageWindowRect` |
 | [Doc.media](./doc.md#id178) object | properties: * `canPlay`  methods: * `deleteRendition` * `getAnnot` * `getAnnots` * `getRendition` * `newPlayer` |
 | `event` object | A new Screen type used with Multimedia along with associated event names. |

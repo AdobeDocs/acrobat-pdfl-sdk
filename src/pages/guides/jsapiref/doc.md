@@ -3939,7 +3939,7 @@ myNovelDoc.gotoNamedDest("chapter5");
 this.closeDoc();
 ```
 
-See [Example 6 (Acrobat 8.0)](./js-api-acrojs.md#78489) following openDoc for a more efficient way of performing this same task.
+See [Example 6 (Acrobat 8.0)](./app-apis.md#78489) following openDoc for a more efficient way of performing this same task.
 
 <a id="21267"></a>
 <a id="importanfdf"></a>

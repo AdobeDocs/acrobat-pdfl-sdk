@@ -6,6 +6,8 @@ This document is a complete reference to the Acrobat extensions to JavaScript, i
 
 * [Annotation APIs](./annotation-apis.md)
 * [Security and Signature APIs](./security-signature-apis.md)
+* [App APIs](./app-apis.md)
+* [Event APIs](./event-apis.md)
 
 <a id="version-compatibility"></a>
 <a id="id2"></a>
