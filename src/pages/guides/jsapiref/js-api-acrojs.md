@@ -2,8 +2,8 @@
 <a id="id1"></a>
 # JavaScript APIs
 
-* [Annotation APIs](./annotation_apis.md)
-* [Security and Signature APIs](./security_signature_apis.md)
+* [Annotation APIs](./annotation-apis.md)
+* [Security and Signature APIs](./security-signature-apis.md)
 
 <a id="53810"></a>
 <a id="alerter"></a>
@@ -12100,7 +12100,7 @@ A generic JavaScript object, passed to `signatureSetSeedValue` and returned by `
 >     default
 >     defaultAndComments*
 >     While `allowAll` is a legal value, it cancels out the effect of MDP and no certification signature can be used for this field, resulting in the signature being an approval signature, not an certification signature.
->     Values are unique identifiers and are described in the table titled [Modification Detection and Prevention (MDP) Values](./security_signature_apis.md#64083).
+>     Values are unique identifiers and are described in the table titled [Modification Detection and Prevention (MDP) Values](./security-signature-apis.md#64083).
 > - - `reasons`
 >   - Array of Strings
 >   - R/W

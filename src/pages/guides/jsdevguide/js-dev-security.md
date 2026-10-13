@@ -157,7 +157,7 @@ ppklite.login(oParams);
 <a id="the-signatureinfo-object"></a>
 ### The SignatureInfo object
 
-To create the `oInfo` parameter for the signature field’s `signatureSign` method, create a generic object containing the properties as described in the table [SignatureInfo properties](../jsapiref/security_signature_apis.md#id970):
+To create the `oInfo` parameter for the signature field’s `signatureSign` method, create a generic object containing the properties as described in the table [SignatureInfo properties](../jsapiref/security-signature-apis.md#id970):
 
 ```
 var myInfo = {
@@ -329,7 +329,7 @@ This section discusses various aspects of security: adding security, including e
 
 Since the Standard security handler, used for password encryption of documents, is not JavaScript-enabled, the most direct way to add passwords is through the creation of user or master passwords in the Acrobat user interface.
 
-As described in [Encrypting files using certificates](./js-dev-security.md#99032), you can encrypt a document for a number of recipients using certificates, and can set security policies through the application of a certification signature accompanied by the desired modification, detection, and prevention settings shown in the table [SignatureInfo properties](../jsapiref/security_signature_apis.md#id970).
+As described in [Encrypting files using certificates](./js-dev-security.md#99032), you can encrypt a document for a number of recipients using certificates, and can set security policies through the application of a certification signature accompanied by the desired modification, detection, and prevention settings shown in the table [SignatureInfo properties](../jsapiref/security-signature-apis.md#id970).
 
 <a id="95020"></a>
 <a id="adding-usage-rights-to-a-document"></a>
