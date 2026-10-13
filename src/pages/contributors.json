@@ -1,7 +1,7 @@
 {
-  "total": 122,
+  "total": 123,
   "offset": 0,
-  "limit": 122,
+  "limit": 123,
   "data": [
     {
       "page": "/",
@@ -831,6 +831,13 @@
         "https://avatars.githubusercontent.com/u/50121312?v=4"
       ],
       "lastUpdated": "10/12/2026"
+    },
+    {
+      "page": "/pdfl/apireference/readme",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/50121312?v=4"
+      ],
+      "lastUpdated": "10/13/2026"
     },
     {
       "page": "/pdfl/releasenotes18",
