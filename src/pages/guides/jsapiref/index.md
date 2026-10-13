@@ -4,6 +4,9 @@
 
 This document is a complete reference to the Acrobat extensions to JavaScript, its objects, methods, and properties. It is organized alphabetically by object name.
 
+* [Annotation APIs](./annotation_apis.md)
+* [Security and Signature APIs](./security_signature_apis.md)
+
 <a id="version-compatibility"></a>
 <a id="id2"></a>
 ## Version compatibility
