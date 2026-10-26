@@ -4,8 +4,21 @@
 ## Doc status
 
 - This repo contains the source markdown for PDFL and Acrobat SDK guides published to developer.adobe.com. RST is deprecated and cannot be used since the new source has thousands of changes (including bug fixes).
-- The old site at https://opensource.adobe.com/dc-acrobat-sdk-docs/ redirects here.
-- Only API References continue to live at https://github.com/adobe/dc-acrobat-sdk-docs
+
+Repo and doc map: 
+
+Legacy opensource site: 
+- Repo: https://github.com/adobe/dc-acrobat-sdk-docs
+- API reference output still live there. 
+- Public API reference location: https://opensource.adobe.com/dc-acrobat-sdk-docs/. Doxygen output only. 
+- SDK docs now redirect to the location below.
+
+New docs on developer.adobe.com 
+- SDK guide repo is here: https://github.com/AdobeDocs/acrobat-pdfl-sdk
+- SDK output is here: https://developer.adobe.com/acrobat-pdfl-sdk/
+
+7 year old Framemaker source is here: https://github.com/Adobe-Print/Deprecated_Docs_PDFL_Acrobat_SDK.git
+
 
 ## Information about using this platfrom
 
